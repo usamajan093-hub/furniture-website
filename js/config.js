@@ -13,9 +13,9 @@ window.SITE_CONFIG = {
 
   /* ---- Contact ---- */
   // Phone shown on the site (any readable format):
-  phoneDisplay: "+92 300 0000000",           // [EDIT]
+  phoneDisplay: "+92 303 9619600",
   // Same phone for click-to-call links (digits and + only, no spaces):
-  phoneTel: "+923000000000",                 // [EDIT]
+  phoneTel: "+923039619600",
 
   // WhatsApp number in INTERNATIONAL format, digits only, NO + and NO spaces.
   // Example for a Pakistan number +92 300 1234567  ->  "923001234567"
