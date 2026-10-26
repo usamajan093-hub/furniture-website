@@ -19,7 +19,7 @@ window.SITE_CONFIG = {
 
   // WhatsApp number in INTERNATIONAL format, digits only, NO + and NO spaces.
   // Example for a Pakistan number +92 300 1234567  ->  "923001234567"
-  whatsappNumber: "920000000000",            // [EDIT — required for WhatsApp button]
+  whatsappNumber: "923039619600",
 
   email: "info@example.com",                 // [EDIT]
 
