@@ -1,0 +1,6 @@
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# EDIT: replace with your real domain once the site is live
+Sitemap: https://www.example.com/sitemap.xml

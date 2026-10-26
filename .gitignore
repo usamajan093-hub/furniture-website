@@ -1,0 +1,7 @@
+# Local tooling
+.claude/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
