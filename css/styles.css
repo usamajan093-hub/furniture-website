@@ -807,3 +807,6 @@ p:last-child { margin-bottom: 0; }
 /* Gallery overlay description */
 .gallery-overlay p { margin: 6px 0 0; font-size: 0.82rem; line-height: 1.45; color: rgba(255,255,255,0.82); }
 .gallery-overlay { padding-top: 64px; }
+
+/* Hero collage: keep the sharp door panel in view on phones */
+@media (max-width: 860px) { .hero-media img { object-position: 43% center; } }
