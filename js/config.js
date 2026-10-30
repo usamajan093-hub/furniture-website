@@ -8,8 +8,8 @@
 
 window.SITE_CONFIG = {
   /* ---- Brand ---- */
-  brandName: "FINISHCRAFT",
-  brandTagline: "Wood Finishing & Interiors",
+  brandName: "royalwoodinteriors.com",
+  brandTagline: "Royal Wood Polish, Deco & Interiors",
   brandSlogan: "From Premium Wood Finishing to Complete Interior Woodwork.",
 
   /* ---- Contact ---- */
@@ -47,7 +47,7 @@ window.SITE_CONFIG = {
 
   /* ---- Pre-filled WhatsApp greeting ---- */
   whatsappMessage:
-    "Assalam-o-Alaikum, I am interested in FINISHCRAFT's wood polishing / interior woodwork services. Please share details and a quotation.",
+    "Assalam-o-Alaikum, I am interested in Royal Wood Interiors' wood polishing / interior woodwork services. Please share details and a quotation.",
 
   /* ---- Form delivery ----------------------------------------------------
      How contact / consultation form submissions reach you. Choose ONE mode:
