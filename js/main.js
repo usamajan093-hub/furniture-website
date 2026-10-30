@@ -113,8 +113,23 @@
   /* ---------- Active nav link ---------- */
   const here = location.pathname.split("/").pop() || "index.html";
   $$(".nav-links a").forEach((a) => {
-    const target = (a.getAttribute("href") || "").split("#")[0] || "index.html";
-    if (target === here) a.setAttribute("aria-current", "page");
+    const href = a.getAttribute("href") || "";
+    const target = href.split("#")[0] || "index.html";
+    if (target === here && !href.includes("#")) {
+      a.setAttribute("aria-current", "page");
+      const parent = a.closest(".has-sub");
+      if (parent) $(".nav-sub-toggle", parent)?.classList.add("current");
+    }
+  });
+
+  /* ---------- Services dropdown (click/tap + keyboard) ---------- */
+  $$(".has-sub").forEach((li) => {
+    const btn = $(".nav-sub-toggle", li);
+    if (!btn) return;
+    const set = (open) => { li.classList.toggle("open", open); btn.setAttribute("aria-expanded", String(open)); };
+    btn.addEventListener("click", (e) => { e.stopPropagation(); set(!li.classList.contains("open")); });
+    document.addEventListener("click", (e) => { if (!li.contains(e.target)) set(false); });
+    li.addEventListener("keydown", (e) => { if (e.key === "Escape") { set(false); btn.focus(); } });
   });
 
   /* ---------- Back to top ---------- */

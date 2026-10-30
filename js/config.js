@@ -8,8 +8,9 @@
 
 window.SITE_CONFIG = {
   /* ---- Brand ---- */
-  brandName: "Artisan Woodcraft",            // [EDIT] Your business name
-  brandTagline: "Furniture & Wood Polishing", // [EDIT] Short tagline under the logo
+  brandName: "FINISHCRAFT",
+  brandTagline: "Wood Finishing & Interiors",
+  brandSlogan: "From Premium Wood Finishing to Complete Interior Woodwork.",
 
   /* ---- Contact ---- */
   // Phone shown on the site (any readable format):
@@ -27,7 +28,7 @@ window.SITE_CONFIG = {
   addressLine: "[Street Address]",           // [EDIT]
   city: "[City]",                            // [EDIT]
   region: "[Province/State]",                // [EDIT]
-  country: "[Country]",                      // [EDIT]
+  country: "Pakistan",                       // [EDIT]
   // Paste a Google Maps "embed" src URL here to show a live map on Contact.
   // Leave empty ("") to show a tidy placeholder instead.
   googleMapsEmbedSrc: "",                     // [EDIT — optional]
@@ -42,14 +43,14 @@ window.SITE_CONFIG = {
   },
 
   /* ---- Money ---- */
-  currency: "PKR",                           // [EDIT] Shown next to budget options
+  currency: "PKR",
 
   /* ---- Pre-filled WhatsApp greeting ---- */
   whatsappMessage:
-    "Assalam-o-Alaikum, I am interested in your furniture and wood polishing services. Please provide details and a quotation.",
+    "Assalam-o-Alaikum, I am interested in FINISHCRAFT's wood polishing / interior woodwork services. Please share details and a quotation.",
 
   /* ---- Form delivery ----------------------------------------------------
-     How contact / quote form submissions reach you. Choose ONE mode:
+     How contact / consultation form submissions reach you. Choose ONE mode:
 
        "whatsapp"  -> opens WhatsApp with the form details pre-filled
                       (no backend needed — works out of the box)
@@ -57,8 +58,6 @@ window.SITE_CONFIG = {
        "endpoint"  -> sends the data to a backend/form service URL
                       (set formEndpoint below). Good options: Formspree,
                       Getform, Basin, or your own server.
-
-     Recommended default is "whatsapp" so the site works with zero setup.
   ------------------------------------------------------------------------ */
   formMode: "whatsapp",
 
@@ -68,6 +67,6 @@ window.SITE_CONFIG = {
   /* ---- SEO defaults (per-page titles are set in each HTML file) ---- */
   seo: {
     // Used for location-based SEO text. Keep configurable.
-    serviceArea: "[Your City & surrounding areas]",
+    serviceArea: "[Your City] & surrounding areas",   // [EDIT]
   },
 };

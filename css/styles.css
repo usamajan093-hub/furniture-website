@@ -12,18 +12,20 @@
 /* ---------- 1. TOKENS ---------- */
 :root {
   /* Palette */
-  --walnut: #3d2a1f;
-  --walnut-deep: #2a1c14;
+  --walnut: #3b2a1e;
+  --walnut-deep: #28190f;
   --walnut-soft: #5a3f30;
-  --charcoal: #1b1917;
+  --oak: #b98b5c;
+  --oak-soft: #d9b98f;
+  --charcoal: #1a1816;
   --charcoal-soft: #2b2724;
   --beige: #d9c5a7;
   --beige-soft: #e9dcc7;
-  --cream: #f7f2ea;
-  --cream-deep: #efe7da;
-  --gold: #c5a059;
-  --gold-soft: #d8bd85;
-  --gold-deep: #a8853f;
+  --cream: #f8f3eb;
+  --cream-deep: #efe6d7;
+  --gold: #cdb078;        /* champagne gold */
+  --gold-soft: #e1cc9e;
+  --gold-deep: #ae8f4c;
   --white: #ffffff;
 
   /* Text */
@@ -638,3 +640,170 @@ p:last-child { margin-bottom: 0; }
   .filters { gap: 8px; }
   .filter-btn { padding: 8px 14px; font-size: 0.82rem; }
 }
+
+/* =====================================================================
+   13. FINISHCRAFT COMPONENTS
+   ===================================================================== */
+.sprite { display: none; }
+
+/* ---- Services dropdown in header ---- */
+.has-sub { position: relative; }
+.nav-sub-toggle {
+  display: inline-flex; align-items: center; gap: 6px; font-size: 0.92rem; font-weight: 500;
+  color: var(--text-on-dark-muted); padding: 6px 0; position: relative; transition: color 0.2s;
+}
+.nav-sub-toggle svg { width: 14px; height: 14px; transition: transform 0.3s var(--ease); }
+.nav-sub-toggle::after {
+  content: ""; position: absolute; left: 0; bottom: 0; height: 2px; width: 100%;
+  background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform 0.3s var(--ease);
+}
+.has-sub:hover .nav-sub-toggle, .nav-sub-toggle[aria-expanded="true"], .nav-sub-toggle.current { color: var(--text-on-dark); }
+.has-sub:hover .nav-sub-toggle::after, .nav-sub-toggle.current::after { transform: scaleX(1); }
+.nav-sub-toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
+.sub {
+  position: absolute; top: 100%; left: -14px; min-width: 300px; margin-top: 14px; padding: 10px;
+  background: var(--charcoal); border: 1px solid var(--line-dark); border-radius: 12px;
+  box-shadow: 0 24px 50px rgba(0,0,0,0.45); opacity: 0; visibility: hidden; transform: translateY(8px);
+  transition: opacity 0.25s var(--ease), transform 0.25s var(--ease), visibility 0s linear 0.25s; z-index: 50;
+}
+.sub::before { content: ""; position: absolute; left: 0; right: 0; top: -16px; height: 16px; }
+.has-sub:hover .sub, .has-sub:focus-within .sub, .has-sub.open .sub { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
+.nav-links .sub a { display: block; padding: 11px 14px; border-radius: 8px; line-height: 1.3; }
+.nav-links .sub a::after { display: none; }
+.nav-links .sub a:hover { background: rgba(255,255,255,0.06); }
+.nav-links .sub a strong { display: block; color: var(--text-on-dark); font-weight: 600; font-size: 0.92rem; }
+.nav-links .sub a span { display: block; font-size: 0.78rem; color: var(--text-on-dark-muted); margin-top: 2px; }
+.nav-links .sub a.core strong { color: var(--gold-soft); }
+.nav-links .sub a.core strong::after { content: "Core"; margin-left: 8px; padding: 2px 7px; border-radius: 999px; background: var(--gold); color: var(--charcoal); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; vertical-align: middle; }
+
+/* ---- Service hierarchy tiers ---- */
+.tiers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.tier {
+  position: relative; padding: 30px 26px 26px; border-radius: var(--radius-lg); background: var(--surface);
+  border: 1px solid var(--line); display: flex; flex-direction: column; gap: 10px;
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease), border-color 0.3s;
+}
+.tier:hover { transform: translateY(-5px); box-shadow: var(--shadow); border-color: var(--gold-soft); }
+.tier-num { font-family: var(--font-display); font-size: 2.2rem; line-height: 1; color: var(--gold-deep); }
+.tier-label { font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; color: var(--text-muted); }
+.tier h3 { font-size: 1.18rem; margin: 2px 0 0; }
+.tier p { font-size: 0.92rem; color: var(--text-muted); flex: 1; }
+.tier .link-arrow { margin-top: 8px; font-size: 0.9rem; }
+.tier.core { background: var(--walnut-deep); border-color: var(--gold); }
+.tier.core h3 { color: var(--white); }
+.tier.core p { color: var(--text-on-dark-muted); }
+.tier.core .tier-label { color: var(--gold-soft); }
+.tier.core .tier-num { color: var(--gold); }
+.tier.core .link-arrow { color: var(--gold-soft); }
+.tier.core::after {
+  content: "Core Specialty"; position: absolute; top: 18px; right: 18px; padding: 5px 10px; border-radius: 999px;
+  background: var(--gold); color: var(--charcoal); font-size: 0.64rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+}
+
+/* ---- Before / after pair (two real photos side by side) ---- */
+.ba-pair { display: grid; grid-template-columns: 1fr auto 1fr; gap: 20px; align-items: center; }
+.ba-pair figure {
+  margin: 0; position: relative; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow);
+  aspect-ratio: 4 / 5; background: var(--cream-deep);
+}
+.ba-pair img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s var(--ease); }
+.ba-pair figure:hover img { transform: scale(1.03); }
+.ba-pair figcaption {
+  position: absolute; top: 14px; left: 14px; padding: 6px 12px; border-radius: 999px; font-size: 0.72rem; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); background: rgba(27,25,23,0.75); backdrop-filter: blur(6px);
+}
+.ba-pair figure.after figcaption { background: var(--gold-deep); }
+.ba-arrow { width: 48px; height: 48px; border-radius: 50%; background: var(--gold); color: var(--charcoal); display: grid; place-items: center; box-shadow: 0 8px 20px rgba(197,160,89,0.35); }
+.ba-arrow svg { width: 22px; height: 22px; }
+.ba-pair-caption { margin-top: 18px; text-align: center; color: var(--text-muted); font-size: 0.95rem; }
+.ba-pair-caption strong { display: block; font-family: var(--font-display); font-size: 1.1rem; color: var(--walnut-deep); }
+.on-dark .ba-pair-caption { color: var(--text-on-dark-muted); }
+.on-dark .ba-pair-caption strong { color: var(--white); }
+
+/* ---- "You can hire us for" grid ---- */
+.hire-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+.hire {
+  padding: 24px 18px; border-radius: var(--radius); background: rgba(255,255,255,0.04); border: 1px solid var(--line-dark);
+  text-align: center; transition: transform 0.3s var(--ease), border-color 0.3s, background 0.3s; display: block;
+}
+.hire:hover { border-color: var(--gold); background: rgba(205,176,120,0.08); transform: translateY(-4px); }
+.hire svg { width: 30px; height: 30px; color: var(--gold-soft); margin: 0 auto 12px; }
+.hire strong { display: block; color: var(--text-on-dark); font-size: 0.95rem; margin-bottom: 4px; }
+.hire span { font-size: 0.82rem; color: var(--text-on-dark-muted); }
+
+/* ---- Split hero (text + real photo) on service pages ---- */
+.page-hero.split-hero { text-align: left; }
+.page-hero.split-hero .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 56px; align-items: center; }
+.page-hero.split-hero .breadcrumb { justify-content: flex-start; }
+.page-hero.split-hero .lead { margin: 0 0 30px; }
+.hero-photo {
+  position: relative; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg);
+  aspect-ratio: 4 / 5; max-height: 480px; border: 1px solid rgba(255,255,255,0.15); background: var(--charcoal);
+}
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+.hero-photo .photo-tag {
+  position: absolute; left: 14px; bottom: 14px; padding: 7px 12px; border-radius: 999px; font-size: 0.7rem; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--charcoal); background: var(--gold);
+}
+
+/* ---- Real-photo galleries & cards ---- */
+.gallery.portrait .gallery-item { aspect-ratio: 4 / 5; }
+.card-media.portrait { aspect-ratio: 4 / 5; }
+.card-media.landscape { aspect-ratio: 16 / 9; }
+.real-tag {
+  display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: 999px; font-size: 0.68rem; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase; background: var(--gold); color: var(--charcoal);
+}
+.real-tag svg { width: 12px; height: 12px; }
+.poster { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); background: var(--charcoal); }
+.poster img { width: 100%; height: auto; display: block; }
+
+/* ---- Finish types list (polishing page) ---- */
+.finish-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.finish { padding: 22px 22px 20px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); transition: border-color 0.3s, transform 0.3s var(--ease); }
+.finish:hover { border-color: var(--gold); transform: translateY(-3px); }
+.finish h4 { margin: 0 0 6px; font-size: 1.05rem; display: flex; align-items: center; gap: 10px; }
+.finish h4::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--gold); flex: none; }
+.finish p { margin: 0; font-size: 0.9rem; color: var(--text-muted); }
+
+/* ---- Project scope list (bungalow page) ---- */
+.scope { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; counter-reset: scope; }
+.scope li { display: flex; gap: 16px; padding: 18px 20px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); align-items: flex-start; }
+.scope li::before { counter-increment: scope; content: counter(scope, decimal-leading-zero); font-family: var(--font-display); font-size: 1.4rem; color: var(--gold-deep); line-height: 1; flex: none; }
+.scope strong { display: block; color: var(--walnut-deep); margin-bottom: 2px; }
+.scope span { font-size: 0.9rem; color: var(--text-muted); }
+
+/* ---- Brand mark monogram ---- */
+.brand-mark { background: var(--walnut-deep); border: 1.5px solid var(--gold); color: var(--gold-soft); }
+.brand-mark svg { width: 26px; height: 26px; }
+.site-footer .brand-mark { background: var(--charcoal); }
+
+/* ---- Responsive for new components ---- */
+@media (max-width: 1024px) {
+  .tiers { grid-template-columns: repeat(2, 1fr); }
+  .hire-grid { grid-template-columns: repeat(3, 1fr); }
+  .finish-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 860px) {
+  .has-sub { position: static; }
+  .nav-sub-toggle { width: 100%; justify-content: space-between; font-size: 1.15rem; padding: 16px 0; border-bottom: 1px solid var(--line-dark); color: var(--text-on-dark); }
+  .nav-sub-toggle::after { display: none; }
+  .sub { position: static; opacity: 1; visibility: visible; transform: none; background: transparent; border: 0; box-shadow: none; margin: 0; padding: 4px 0 6px 16px; min-width: 0; display: none; }
+  .has-sub.open .sub { display: block; }
+  .nav-links .sub a { padding: 12px 0; border-bottom: 1px solid var(--line-dark); border-radius: 0; font-size: 1rem; }
+  .nav-links .sub a strong { font-size: 1rem; }
+  .page-hero.split-hero .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+  .hero-photo { aspect-ratio: 4 / 3; max-height: 380px; }
+  .scope { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .tiers { grid-template-columns: 1fr; }
+  .hire-grid { grid-template-columns: repeat(2, 1fr); }
+  .finish-grid { grid-template-columns: 1fr; }
+  .ba-pair { grid-template-columns: 1fr; }
+  .ba-arrow { margin: 0 auto; transform: rotate(90deg); }
+}
+
+/* Gallery overlay description */
+.gallery-overlay p { margin: 6px 0 0; font-size: 0.82rem; line-height: 1.45; color: rgba(255,255,255,0.82); }
+.gallery-overlay { padding-top: 64px; }
