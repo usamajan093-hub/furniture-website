@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- EDIT: replace the base URL with your custom domain once it is connected -->
+<!-- EDIT: base URL is the custom domain royalwoodinteriors.com -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://usamajan093-hub.github.io/furniture-website/index.html</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://usamajan093-hub.github.io/furniture-website/wood-polishing.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://usamajan093-hub.github.io/furniture-website/custom-furniture.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://usamajan093-hub.github.io/furniture-website/interior-woodwork.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://usamajan093-hub.github.io/furniture-website/bungalow-projects.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://usamajan093-hub.github.io/furniture-website/portfolio.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://usamajan093-hub.github.io/furniture-website/about.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://usamajan093-hub.github.io/furniture-website/contact.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://usamajan093-hub.github.io/furniture-website/consultation.html</loc><changefreq>yearly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://royalwoodinteriors.com/index.html</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://royalwoodinteriors.com/wood-polishing.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://royalwoodinteriors.com/custom-furniture.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://royalwoodinteriors.com/interior-woodwork.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://royalwoodinteriors.com/bungalow-projects.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://royalwoodinteriors.com/portfolio.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://royalwoodinteriors.com/about.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://royalwoodinteriors.com/contact.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://royalwoodinteriors.com/consultation.html</loc><changefreq>yearly</changefreq><priority>0.9</priority></url>
 </urlset>

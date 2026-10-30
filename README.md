@@ -4,7 +4,7 @@ Premium, fully responsive, multi-page website for **FINISHCRAFT** — a wood pol
 
 Built with **plain HTML, CSS and JavaScript** — no frameworks, no build step, no server required. Open `index.html` and it works. Hosted free on GitHub Pages.
 
-**Live site:** https://usamajan093-hub.github.io/furniture-website/
+**Live site:** https://usamajan093-hub.github.io/furniture-website/ (custom domain: royalwoodinteriors.com — see section 4)
 
 ---
 

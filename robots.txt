@@ -2,5 +2,5 @@
 User-agent: *
 Allow: /
 
-# EDIT: replace with your real domain once the site is live
-Sitemap: https://www.example.com/sitemap.xml
+# Custom domain
+Sitemap: https://royalwoodinteriors.com/sitemap.xml
