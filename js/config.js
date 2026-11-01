@@ -10,13 +10,20 @@ window.SITE_CONFIG = {
   /* ---- Brand ---- */
   brandName: "royalwoodinteriors.com",
   brandTagline: "Royal Wood Polish, Deco & Interiors",
-  brandSlogan: "From Premium Wood Finishing to Complete Interior Woodwork.",
+  brandSlogan: "Complete Polish Work, Deco & All Kinds of Woodwork — for Homes, Factories & Buildings.",
+  // Shown on About / Contact / footer. Leave "" to hide.
+  ownerNames: "Muhammad Asghar & Abdul Latif",
+  tradingAs: "Asghar & Latif — Wood Solutions",
 
   /* ---- Contact ---- */
   // Phone shown on the site (any readable format):
   phoneDisplay: "+92 309 8986264",
   // Same phone for click-to-call links (digits and + only, no spaces):
   phoneTel: "+923098986264",
+
+  // Second phone line (shown beside the first; leave both "" to hide it):
+  phone2Display: "+92 300 4086113",
+  phone2Tel: "+923004086113",
 
   // WhatsApp number in INTERNATIONAL format, digits only, NO + and NO spaces.
   // Example for a Pakistan number +92 300 1234567  ->  "923001234567"
@@ -25,9 +32,9 @@ window.SITE_CONFIG = {
   email: "info@example.com",                 // [EDIT]
 
   /* ---- Address / Location (used for SEO + Contact page) ---- */
-  addressLine: "[Street Address]",           // [EDIT]
-  city: "[City]",                            // [EDIT]
-  region: "[Province/State]",                // [EDIT]
+  addressLine: "Manzoor Colony",             // [EDIT — add street / shop no. if you like]
+  city: "Karachi",                           // [EDIT if your Manzoor Colony is in another city]
+  region: "Sindh",                           // [EDIT]
   country: "Pakistan",                       // [EDIT]
   // Paste a Google Maps "embed" src URL here to show a live map on Contact.
   // Leave empty ("") to show a tidy placeholder instead.
@@ -47,7 +54,7 @@ window.SITE_CONFIG = {
 
   /* ---- Pre-filled WhatsApp greeting ---- */
   whatsappMessage:
-    "Assalam-o-Alaikum, I am interested in Royal Wood Interiors' wood polishing / interior woodwork services. Please share details and a quotation.",
+    "Assalam-o-Alaikum, I am interested in Royal Wood Interiors' polish work / woodwork services (Asghar & Latif). Please share details and a quotation.",
 
   /* ---- Form delivery ----------------------------------------------------
      How contact / consultation form submissions reach you. Choose ONE mode:
@@ -67,6 +74,6 @@ window.SITE_CONFIG = {
   /* ---- SEO defaults (per-page titles are set in each HTML file) ---- */
   seo: {
     // Used for location-based SEO text. Keep configurable.
-    serviceArea: "[Your City] & surrounding areas",   // [EDIT]
+    serviceArea: "Karachi & surrounding areas",   // [EDIT]
   },
 };

@@ -115,3 +115,14 @@ Colours and fonts are CSS variables at the top of `css/styles.css` (`--walnut`, 
 - [ ] About page placeholders written
 - [ ] Google Map embed
 - [ ] Custom domain (optional)
+
+## Update — Asghar & Latif flyer (1 Nov 2026)
+
+The site now follows the business flyer: **Contractor · Factory Polish Work — Asghar & Latif, Wood Solutions**.
+
+- `js/config.js` gained `ownerNames`, `tradingAs`, `phone2Display` / `phone2Tel` (second number), and the location is set to Manzoor Colony, Karachi (edit `city` if that is wrong).
+- Services follow the flyer: Furniture Polish, Bedroom Sets, Chairs & Tables, Doors & Windows, Full Building Projects, Big Project Sets, Factory Contracts, Home Interiors — plus **Deco** and all kinds of woodwork (manufacturing, not only polish).
+- Finishes listed everywhere: PU · Melamine · Lacquer · Matt · Glossy.
+- New photos cropped from the flyer in `assets/images/`: `building-projects`, `factory-polish-work`, `bedroom-set`, `doors-installed`, `dressing-furniture`, `wardrobe` (.webp), and the flyer itself `flyer-asghar-latif.webp` (shown on About).
+- Before/after now uses draggable comparison sliders (`.ba` blocks) on Home, Polish Work and Portfolio, alongside the side-by-side pairs.
+- Second phone: wrap a link in `data-tel2 data-phone2`; it is hidden automatically if `phone2Tel` is empty.

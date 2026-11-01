@@ -36,6 +36,11 @@
   });
   // Click-to-call / mail
   $$("[data-tel]").forEach((a) => (a.href = `tel:${CFG.phoneTel || ""}`));
+  // Optional second phone line: <a data-tel2><span data-cfg="phone2Display"></span></a>
+  // Wrap it in [data-phone2] to hide the whole element when no second number is set.
+  $$("[data-tel2]").forEach((a) => (a.href = `tel:${CFG.phone2Tel || ""}`));
+  if (!CFG.phone2Tel) $$("[data-phone2]").forEach((el) => el.remove());
+  if (!CFG.ownerNames) $$("[data-owners]").forEach((el) => el.remove());
   $$("[data-mail]").forEach((a) => (a.href = `mailto:${CFG.email || ""}`));
   // WhatsApp links: optional custom message in data-wa-msg
   $$("[data-wa]").forEach((a) => {
@@ -63,8 +68,10 @@
       "@context": "https://schema.org",
       "@type": "HomeAndConstructionBusiness",
       name: CFG.brandName,
-      description: "Custom furniture manufacturing, professional wood polishing, furniture restoration and complete bungalow furniture solutions.",
-      telephone: CFG.phoneTel,
+      description: "Contractor for factory polish work and all kinds of woodwork: furniture polish (PU, melamine, lacquer, matt, glossy), bedroom sets, chairs and tables, doors and windows, deco and home interiors, full building projects and factory contracts.",
+      alternateName: CFG.tradingAs || undefined,
+      founder: CFG.ownerNames ? CFG.ownerNames.split("&").map((n) => ({ "@type": "Person", name: n.trim() })) : undefined,
+      telephone: [CFG.phoneTel, CFG.phone2Tel].filter(Boolean),
       email: CFG.email,
       url: location.origin + location.pathname.replace(/[^/]*$/, ""),
       address: {
