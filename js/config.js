@@ -32,8 +32,8 @@ window.SITE_CONFIG = {
   email: "info@example.com",                 // [EDIT]
 
   /* ---- Address / Location (used for SEO + Contact page) ---- */
-  addressLine: "Manzoor Colony",             // [EDIT — add street / shop no. if you like]
-  city: "Karachi",                           // [EDIT if your Manzoor Colony is in another city]
+  addressLine: "House No. 452/A, Street No. 54, Sector C, Sir Syed Ahmad Khan Road, near Maryam Masjid, Manzoor Colony",
+  city: "Karachi",
   region: "Sindh",                           // [EDIT]
   country: "Pakistan",                       // [EDIT]
   // Paste a Google Maps "embed" src URL here to show a live map on Contact.
@@ -41,7 +41,7 @@ window.SITE_CONFIG = {
   googleMapsEmbedSrc: "",                     // [EDIT — optional]
 
   /* ---- Working hours (shown on Contact page) ---- */
-  hours: "Mon – Sat: 9:00 AM – 8:00 PM",     // [EDIT]
+  hours: "Open daily: 7:00 AM – 11:30 PM",
 
   /* ---- Social links (leave "" to hide a link) ---- */
   social: {
