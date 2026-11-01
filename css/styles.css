@@ -883,3 +883,9 @@ p:last-child { margin-bottom: 0; }
   .owner { padding: 18px; }
   .hire-grid.cols-4 { grid-template-columns: 1fr 1fr; }
 }
+
+/* Leadership team grid (filled from config.team) */
+.owners-grid.team { grid-template-columns: repeat(4, 1fr); }
+.owners-grid.team .owner { flex-direction: column; text-align: center; gap: 12px; }
+@media (max-width: 1024px) { .owners-grid.team { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .owners-grid.team { grid-template-columns: 1fr; } }

@@ -41,6 +41,21 @@
   $$("[data-tel2]").forEach((a) => (a.href = `tel:${CFG.phone2Tel || ""}`));
   if (!CFG.phone2Tel) $$("[data-phone2]").forEach((el) => el.remove());
   if (!CFG.ownerNames) $$("[data-owners]").forEach((el) => el.remove());
+  // Leadership team: <div data-team></div> is filled from CFG.team; removed when the list is empty.
+  const team = Array.isArray(CFG.team) ? CFG.team.filter((m) => m && m.name) : [];
+  $$("[data-team]").forEach((wrap) => {
+    if (!team.length) { const sec = wrap.closest("[data-team-section]"); (sec || wrap).remove(); return; }
+    wrap.innerHTML = "";
+    team.forEach((m) => {
+      const initials = m.name.split(/\s+/).filter(Boolean).slice(0, 2).map((w) => w[0].toUpperCase()).join("");
+      const card = document.createElement("div"); card.className = "owner";
+      const av = document.createElement("div"); av.className = "avatar"; av.setAttribute("aria-hidden", "true"); av.textContent = initials;
+      const txt = document.createElement("div");
+      const nm = document.createElement("strong"); nm.textContent = m.name;
+      const role = document.createElement("span"); role.textContent = m.role || "";
+      txt.append(nm, role); card.append(av, txt); wrap.appendChild(card);
+    });
+  });
   $$("[data-mail]").forEach((a) => (a.href = `mailto:${CFG.email || ""}`));
   // WhatsApp links: optional custom message in data-wa-msg
   $$("[data-wa]").forEach((a) => {
@@ -70,7 +85,8 @@
       name: CFG.brandName,
       description: "Contractor for factory polish work and all kinds of woodwork: furniture polish (PU, melamine, lacquer, matt, glossy), bedroom sets, chairs and tables, doors and windows, deco and home interiors, full building projects and factory contracts.",
       alternateName: CFG.tradingAs || undefined,
-      founder: CFG.ownerNames ? CFG.ownerNames.split("&").map((n) => ({ "@type": "Person", name: n.trim() })) : undefined,
+      founder: (Array.isArray(CFG.team) ? CFG.team : []).filter((m) => m && m.name && /founder/i.test(m.role || "")).map((m) => ({ "@type": "Person", name: m.name, jobTitle: m.role })),
+      employee: (Array.isArray(CFG.team) ? CFG.team : []).filter((m) => m && m.name).map((m) => ({ "@type": "Person", name: m.name, jobTitle: m.role })),
       telephone: [CFG.phoneTel, CFG.phone2Tel].filter(Boolean),
       email: CFG.email,
       url: location.origin + location.pathname.replace(/[^/]*$/, ""),

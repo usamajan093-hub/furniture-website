@@ -11,7 +11,15 @@ window.SITE_CONFIG = {
   brandName: "royalwoodinteriors.com",
   brandTagline: "Royal Wood Polish, Deco & Interiors",
   brandSlogan: "Complete Polish Work, Deco & All Kinds of Woodwork — for Homes, Factories & Buildings.",
-  // Optional owner / trading names. Leave "" to keep them off the site.
+  // Leadership team shown on Home, About and Contact. Add, remove or reorder freely;
+  // leave the list empty ([]) to hide the team section everywhere.
+  team: [
+    { name: "Abdul Lateef",     role: "Founder & CEO" },
+    { name: "Muhammad Asghar",  role: "Managing Director" },
+    { name: "Muhammad Tanveer", role: "Managing Director" },
+    { name: "Muhammad Akram",   role: "Director" },
+  ],
+  // Optional owner / trading names in prose. Leave "" to keep them off the site.
   ownerNames: "",
   tradingAs: "",
 
@@ -29,7 +37,7 @@ window.SITE_CONFIG = {
   // Example for a Pakistan number +92 300 1234567  ->  "923001234567"
   whatsappNumber: "923098986264",
 
-  email: "info@example.com",                 // [EDIT]
+  email: "furniturewood786@gmail.com",
 
   /* ---- Address / Location (used for SEO + Contact page) ---- */
   addressLine: "House No. 452/A, Street No. 54, Sector C, Sir Syed Ahmad Khan Road, near Maryam Masjid, Manzoor Colony",
