@@ -11,9 +11,9 @@ window.SITE_CONFIG = {
   brandName: "royalwoodinteriors.com",
   brandTagline: "Royal Wood Polish, Deco & Interiors",
   brandSlogan: "Complete Polish Work, Deco & All Kinds of Woodwork — for Homes, Factories & Buildings.",
-  // Shown on About / Contact / footer. Leave "" to hide.
-  ownerNames: "Muhammad Asghar & Abdul Latif",
-  tradingAs: "Asghar & Latif — Wood Solutions",
+  // Optional owner / trading names. Leave "" to keep them off the site.
+  ownerNames: "",
+  tradingAs: "",
 
   /* ---- Contact ---- */
   // Phone shown on the site (any readable format):
@@ -54,7 +54,7 @@ window.SITE_CONFIG = {
 
   /* ---- Pre-filled WhatsApp greeting ---- */
   whatsappMessage:
-    "Assalam-o-Alaikum, I am interested in Royal Wood Interiors' polish work / woodwork services (Asghar & Latif). Please share details and a quotation.",
+    "Assalam-o-Alaikum, I am interested in Royal Wood Interiors' polish work / woodwork services. Please share details and a quotation.",
 
   /* ---- Form delivery ----------------------------------------------------
      How contact / consultation form submissions reach you. Choose ONE mode:
