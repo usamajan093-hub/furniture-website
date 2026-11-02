@@ -8,7 +8,7 @@
 
 window.SITE_CONFIG = {
   /* ---- Brand ---- */
-  brandName: "royalwoodinteriors.com",
+  brandName: "amroyalinteriors.com",
   brandTagline: "Royal Wood Polish, Deco & Interiors",
   brandSlogan: "Complete Polish Work, Deco & All Kinds of Woodwork — for Homes, Factories & Buildings.",
   // Leadership team shown on Home, About and Contact. Add, remove or reorder freely;
@@ -62,7 +62,7 @@ window.SITE_CONFIG = {
 
   /* ---- Pre-filled WhatsApp greeting ---- */
   whatsappMessage:
-    "Assalam-o-Alaikum, I am interested in Royal Wood Interiors' polish work / woodwork services. Please share details and a quotation.",
+    "Assalam-o-Alaikum, I am interested in AM Royal Interiors' polish work / woodwork services. Please share details and a quotation.",
 
   /* ---- Form delivery ----------------------------------------------------
      How contact / consultation form submissions reach you. Choose ONE mode:

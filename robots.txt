@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Custom domain
-Sitemap: https://royalwoodinteriors.com/sitemap.xml
+Sitemap: https://amroyalinteriors.com/sitemap.xml

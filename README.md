@@ -1,10 +1,10 @@
-# Royal Wood Interiors — Wood Finishing & Interior Woodwork Website
+# AM Royal Interiors — Wood Finishing & Interior Woodwork Website
 
-Premium, fully responsive, multi-page website for **Royal Wood Interiors** — a wood polishing and finishing specialist that also manufactures custom furniture and delivers complete interior woodwork for houses, bungalows and villas.
+Premium, fully responsive, multi-page website for **AM Royal Interiors** — a wood polishing and finishing specialist that also manufactures custom furniture and delivers complete interior woodwork for houses, bungalows and villas.
 
 Built with **plain HTML, CSS and JavaScript** — no frameworks, no build step, no server required. Open `index.html` and it works. Hosted free on GitHub Pages.
 
-**Live site:** https://usamajan093-hub.github.io/furniture-website/ (custom domain: royalwoodinteriors.com — see section 4)
+**Live site:** https://usamajan093-hub.github.io/furniture-website/ (custom domain: amroyalinteriors.com — see section 4)
 
 ---
 
@@ -30,7 +30,7 @@ Shared: sticky header with Services dropdown, mobile menu, floating WhatsApp but
 ```
 Website/
 ├── *.html                  pages (see table above)
-├── css/styles.css          complete design system + Royal Wood Interiors components
+├── css/styles.css          complete design system + AM Royal Interiors components
 ├── js/
 │   ├── config.js           ★ ALL BUSINESS DETAILS — edit this first
 │   ├── main.js             nav, dropdown, config injection, animations, FAQ, WhatsApp links, structured data
