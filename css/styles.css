@@ -889,3 +889,9 @@ p:last-child { margin-bottom: 0; }
 .owners-grid.team .owner { flex-direction: column; text-align: center; gap: 12px; }
 @media (max-width: 1024px) { .owners-grid.team { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 600px) { .owners-grid.team { grid-template-columns: 1fr; } }
+
+/* Team band on light backgrounds */
+.bg-cream .owners-note, .bg-white .owners-note, .bg-cream-deep .owners-note { color: var(--text-muted); }
+.bg-cream-deep .owner { background: var(--surface); border-color: var(--line); }
+.bg-cream-deep .owner strong { color: var(--walnut-deep); }
+.bg-cream-deep .owner span { color: var(--text-muted); }
