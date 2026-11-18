@@ -44,6 +44,8 @@ The site can also run as a content-managed website on any PHP host (cPanel, shar
 | Page Builder | add sections (banner, text, image + text, gallery, cards, CTA), drag to reorder, backgrounds, preview, publish; a page can be its own page or extra sections on the home page |
 | Settings | change password/username, download a backup ZIP, regenerate the static `index.html` for GitHub Pages |
 
+On Apache/cPanel the `.htaccess` files block `cms/` and stop scripts in `uploads/`. On nginx or another server, add equivalent rules yourself (deny `/cms/`, no PHP execution under `/uploads/`).
+
 `index.php` renders the live site from the JSON files; `index.html` is the static snapshot that GitHub Pages serves. See `docs/CMS-PLAN.md` for the design.
 
 ## Backups
