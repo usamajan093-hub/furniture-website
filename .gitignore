@@ -5,3 +5,9 @@
 .DS_Store
 Thumbs.db
 *.log
+
+# CMS runtime data (created by install.php)
+cms/data/*
+!cms/data/.htaccess
+uploads/*
+!uploads/.htaccess

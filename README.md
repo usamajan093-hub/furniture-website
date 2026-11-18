@@ -26,6 +26,26 @@ Search `index.html` for these and change them in place:
 
 Photos live in `assets/images/`. Replace a file with one of the same name to swap a picture.
 
+## Admin panel (CMS)
+
+The site can also run as a content-managed website on any PHP host (cPanel, shared hosting, XAMPP). No database: all content lives in JSON files under `cms/data/`.
+
+1. Upload the whole folder to the web root of a PHP 8 host.
+2. Open `https://your-domain/install.php`, create the admin account. The current text, photos and three templates are imported.
+3. Delete `install.php`. Log in at `/admin/`.
+
+| Admin screen | What you manage |
+|---|---|
+| Dashboard | live offers, templates, image count, recent activity, quick actions |
+| Offers | title, description, image, category, percentage or fixed discount, prices, start and expiry dates, CTA button, publish / unpublish / schedule |
+| Media Library | drag-and-drop upload (JPG, PNG, WebP, SVG), search, categories, rename, delete, reuse anywhere |
+| Website Content | hero, marquee, services, before/after, offers copy, products, process, why us, testimonials, CTA, about, portfolio, contact details, social links, footer |
+| Templates | colours, fonts, intro animation, hero layout and photo, button shape, which homepage sections appear; preview, duplicate, set active |
+| Page Builder | add sections (banner, text, image + text, gallery, cards, CTA), drag to reorder, backgrounds, preview, publish; a page can be its own page or extra sections on the home page |
+| Settings | change password/username, download a backup ZIP, regenerate the static `index.html` for GitHub Pages |
+
+`index.php` renders the live site from the JSON files; `index.html` is the static snapshot that GitHub Pages serves. See `docs/CMS-PLAN.md` for the design.
+
 ## Backups
 
 The previous multi-page version is kept at tag `v2.0-amroyal-2026-11-02` and branch `backup-2026-11-02`.

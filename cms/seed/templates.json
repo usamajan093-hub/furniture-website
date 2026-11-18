@@ -1,0 +1,80 @@
+[
+  {
+    "id": "tpl-dark-luxury",
+    "name": "Dark Luxury",
+    "description": "The current look: near-black background, gold accents, serif headings, cinematic intro.",
+    "active": true,
+    "colors": {
+      "bg": "#0a0807", "surface": "#14100d", "surface2": "#1d1712",
+      "gold": "#d4b06a", "gold_light": "#f0d9a4", "gold_dark": "#b88a3e", "gold_pale": "#f6e3b0",
+      "heading": "#ffffff", "text": "#fffaf0", "muted": "#c9bfad", "on_gold": "#0a0807",
+      "intro_bg": "#000000", "marquee_bg": "#000000", "footer_bg": "#070605", "footer_text": "#c9bfad"
+    },
+    "border_alpha": "0.22",
+    "font_heading": "Playfair Display",
+    "font_body": "Inter",
+    "button_style": "square",
+    "intro_enabled": true,
+    "intro_word": "ROYAL",
+    "intro_sub": "Interiors",
+    "hero_layout": "left",
+    "hero_image": "assets/images/hero-doors-collage.jpg",
+    "hero_motion": true,
+    "show_marquee": true, "show_services": true, "show_offers": true, "show_before_after": true,
+    "show_products": true, "show_process": true, "show_why": true, "show_testimonials": true, "show_cta": true,
+    "section_padding": 110,
+    "created_at": "2026-11-18 12:00"
+  },
+  {
+    "id": "tpl-ivory-classic",
+    "name": "Ivory Classic",
+    "description": "Light cream background with walnut text and antique gold — the earlier showroom feel.",
+    "active": false,
+    "colors": {
+      "bg": "#f6f1e7", "surface": "#fffdf8", "surface2": "#efe6d6",
+      "gold": "#a8853f", "gold_light": "#8a6a2a", "gold_dark": "#7a5a22", "gold_pale": "#d9bd82",
+      "heading": "#2a1c14", "text": "#2a1c14", "muted": "#5e4f42", "on_gold": "#1a120c",
+      "intro_bg": "#2a1c14", "marquee_bg": "#2a1c14", "footer_bg": "#2a1c14", "footer_text": "#d8ccb8"
+    },
+    "border_alpha": "0.32",
+    "font_heading": "Playfair Display",
+    "font_body": "Inter",
+    "button_style": "rounded",
+    "intro_enabled": false,
+    "intro_word": "ROYAL",
+    "intro_sub": "Interiors",
+    "hero_layout": "left",
+    "hero_image": "assets/images/hero-doors-collage.jpg",
+    "hero_motion": true,
+    "show_marquee": true, "show_services": true, "show_offers": true, "show_before_after": true,
+    "show_products": true, "show_process": true, "show_why": true, "show_testimonials": true, "show_cta": true,
+    "section_padding": 96,
+    "created_at": "2026-11-18 12:00"
+  },
+  {
+    "id": "tpl-midnight-brass",
+    "name": "Midnight Brass",
+    "description": "Deep navy surfaces with brass highlights, centred hero and pill buttons.",
+    "active": false,
+    "colors": {
+      "bg": "#070b14", "surface": "#0e1526", "surface2": "#16203a",
+      "gold": "#d8b46a", "gold_light": "#f3dfa8", "gold_dark": "#b08a3c", "gold_pale": "#f8e8bd",
+      "heading": "#ffffff", "text": "#f4f1ea", "muted": "#b9b3a6", "on_gold": "#0b0f1c",
+      "intro_bg": "#03050b", "marquee_bg": "#03050b", "footer_bg": "#05080f", "footer_text": "#b9b3a6"
+    },
+    "border_alpha": "0.24",
+    "font_heading": "Playfair Display",
+    "font_body": "Inter",
+    "button_style": "pill",
+    "intro_enabled": true,
+    "intro_word": "ROYAL",
+    "intro_sub": "Interiors",
+    "hero_layout": "center",
+    "hero_image": "assets/images/hero-doors-collage.jpg",
+    "hero_motion": true,
+    "show_marquee": true, "show_services": true, "show_offers": true, "show_before_after": true,
+    "show_products": true, "show_process": true, "show_why": true, "show_testimonials": true, "show_cta": true,
+    "section_padding": 110,
+    "created_at": "2026-11-18 12:00"
+  }
+]

@@ -1,0 +1,180 @@
+{
+  "site": {
+    "name": "AM Royal Interiors | Wood Polish, Deco & Woodwork Contractor — Karachi",
+    "description": "Royal Wood Interiors — polish work contractor for homes, factories and buildings in Karachi. PU, melamine, lacquer, matt and glossy finishes, plus doors, windows, bedroom sets, wardrobes, chairs, tables and deco made by our own team.",
+    "logo_mark": "R",
+    "logo_text": "ROYAL INTERIORS",
+    "logo_sub": "Wood Polish · Deco",
+    "og_image": "assets/images/door-polished-walnut.webp"
+  },
+  "hero": {
+    "eyebrow": "Contractor · Factory Polish Work · Deco",
+    "title": "Royal Wood Polish,",
+    "title_em": "Deco & Interiors",
+    "lead": "Complete polish work for homes, factories and buildings — and every kind of woodwork too. Doors, windows, bedroom sets, wardrobes, chairs, tables and deco: made, installed and finished by our own team.",
+    "btn1_text": "Explore Our Work →",
+    "btn1_link": "#portfolio",
+    "btn2_text": "Request a Consultation",
+    "btn2_link": "#contact",
+    "pills": [
+      "PU · Melamine · Lacquer · Matt · Glossy",
+      "We make the woodwork — not only polish it",
+      "Factory contracts & full building projects"
+    ]
+  },
+  "marquee": {
+    "items": ["PU Polish", "Melamine", "Lacquer", "Matt Finish", "Glossy Finish", "Doors & Windows", "Bedroom Sets", "Deco & Panels", "Building Projects"]
+  },
+  "services": {
+    "eyebrow": "What We Do",
+    "title": "Polish is our specialty —",
+    "title_em": "and we build",
+    "title_after": "all kinds of woodwork too",
+    "lead": "We are polish contractors for homes, factories and buildings. Around that core we manufacture furniture, doors, windows and deco, and take on complete buildings as one contract.",
+    "items": [
+      {"title": "Polish Work", "text": "Homes, factories & buildings. PU, melamine, lacquer, matt or glossy — on new work and on pieces you already own.", "image": "assets/images/door-polished-walnut.webp", "link": "#portfolio?cat=polish"},
+      {"title": "Furniture & Bedroom Sets", "text": "Beds, wardrobes, dressing tables, chairs and tables — made in our workshop and polished to one finish.", "image": "assets/images/bedroom-set.webp", "link": "#portfolio?cat=furn"},
+      {"title": "Doors, Windows & Deco", "text": "Doors and windows made, hung and polished; wall panels, ceilings, TV walls and kitchens.", "image": "assets/images/doors-installed.webp", "link": "#portfolio?cat=doors"},
+      {"title": "Building & Factory Projects", "text": "Full buildings, big project sets and factory polish contracts handled by one contractor.", "image": "assets/images/building-projects.webp", "link": "#portfolio?cat=proj"}
+    ]
+  },
+  "offers_section": {
+    "eyebrow": "Special Offers",
+    "title": "Current offers",
+    "title_em": "& seasonal deals",
+    "lead": "Limited-time prices on polish work, furniture and complete packages. Every offer includes a free site visit and quotation.",
+    "empty": "No offers are running right now. Contact us for a quotation."
+  },
+  "before_after": {
+    "eyebrow": "Before & After",
+    "title": "Drag the handle —",
+    "title_em": "see what polish changes",
+    "text": "A raw solid wood main door on the left, the same door after staining and PU polish on the right. Every finish we apply is prepared the same way: sanded in stages, sealed, stained to an approved sample and built up in thin coats.",
+    "chips": ["PU", "Melamine", "Lacquer", "Matt", "Glossy"],
+    "before_image": "assets/images/door-raw-before-polish.webp",
+    "after_image": "assets/images/door-polished-walnut.webp",
+    "btn_text": "Get a Polish Quote",
+    "btn_link": "#contact"
+  },
+  "products": {
+    "eyebrow": "Products",
+    "title": "Ready-made pieces",
+    "title_em": "from our workshop",
+    "items": []
+  },
+  "process": {
+    "eyebrow": "Our Process",
+    "title": "From raw woodwork",
+    "title_em": "to final finish",
+    "steps": [
+      {"title": "Consultation & Measurement", "text": "You tell us the scope — polish only, specific pieces, a factory contract or a complete building. We visit, measure and advise."},
+      {"title": "Design & Finish Samples", "text": "Designs, wood types and finish samples on your actual wood, with a clear itemised quotation."},
+      {"title": "Manufacturing & Installation", "text": "Doors, windows, furniture and deco built in our workshop and installed on site by our team."},
+      {"title": "Polish & Handover", "text": "Every surface stained and finished by hand and spray, inspected with you in daylight, then handed over."}
+    ]
+  },
+  "why": {
+    "eyebrow": "Why Royal Interiors",
+    "title": "Polish-first craftsmanship",
+    "title_em": "from a team that builds",
+    "items": [
+      {"title": "Polish is our specialty", "text": "Most workshops treat polish as the last step. For us it's the main event — done properly, in the finish you choose."},
+      {"title": "Factory & contract experience", "text": "Door sets and furniture finished in volume — the same standard on the hundredth piece as on the first."},
+      {"title": "We build what we finish", "text": "Doors, windows, bedroom sets, chairs, tables and deco made by us, so the finish is planned from the first cut."},
+      {"title": "One contractor, whole building", "text": "Doors, windows, bedrooms, kitchen, deco and polish from one team — one consistent finish, one point of contact."},
+      {"title": "Clear quotations", "text": "Itemised quotes before work begins. Changes are discussed and agreed with you first."},
+      {"title": "Inspected with you", "text": "Nothing is finished until you've seen it, opened every door and drawer, and are happy with the result."}
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "title": "What our customers",
+    "title_em": "say about us",
+    "items": []
+  },
+  "cta": {
+    "eyebrow": "Start Your Project",
+    "title": "One door, a factory contract or an",
+    "title_em": "entire building",
+    "text": "Send photos of the furniture or the site, or describe your plans. We'll reply with questions, options and a quotation.",
+    "btn1_text": "Request a Consultation",
+    "btn1_link": "#contact",
+    "btn2_text": "Call +92 309 8986264",
+    "btn2_link": "tel:+923098986264"
+  },
+  "about": {
+    "h1": "Polish is our specialty.",
+    "h1_em": "Woodwork is our craft.",
+    "eyebrow": "Who We Are",
+    "title": "A polish contractor",
+    "title_em": "that builds, too",
+    "lead": "Royal Wood Interiors is a polish contractor for homes, factories and buildings in Karachi. Polish is our main event, not the last step: furniture, bedroom sets, doors, windows and whole buildings, finished in PU, melamine, lacquer, matt or glossy.",
+    "text": "We are not only polishers. We manufacture furniture, bedroom sets, doors, windows and deco in our own workshop, so you can order the piece, the room or the whole building from one contractor — and every surface carries the same finish.",
+    "chips": ["Furniture polish", "Bedroom set polish", "Doors & windows", "Full building polish", "Factory contracts", "Wood staining & deco shades", "Repolishing old furniture"],
+    "image": "assets/images/panel-doors-workshop.webp",
+    "btn_text": "Work With Us",
+    "btn_link": "#contact",
+    "boxes_eyebrow": "How We Work",
+    "boxes_title": "Straight answers,",
+    "boxes_title_em": "real work",
+    "boxes": [
+      {"title": "Real work, real photos", "text": "Every photograph on this site is of our own jobs — doors, staircases, window frames and furniture we made or polished."},
+      {"title": "Clear quotations", "text": "Itemised before work begins. If something changes, we discuss and agree it with you first."},
+      {"title": "Inspected with you", "text": "Nothing is finished until you've seen it in daylight and under room lighting and are happy."}
+    ],
+    "photo1": "assets/images/wooden-main-gate.webp",
+    "photo2": "assets/images/staircase-oak-finished.webp"
+  },
+  "portfolio": {
+    "h1": "Real projects,",
+    "h1_em": "real craftsmanship",
+    "filters": [
+      {"key": "polish", "label": "Polish Work"},
+      {"key": "furn", "label": "Furniture & Bedroom Sets"},
+      {"key": "doors", "label": "Doors, Windows & Gates"},
+      {"key": "stairs", "label": "Staircases"},
+      {"key": "proj", "label": "Buildings & Factories"}
+    ],
+    "items": [
+      {"title": "Walnut PU Main Door", "cat": "polish", "image": "assets/images/door-polished-walnut.webp"},
+      {"title": "Wooden Windows — Full Building", "cat": "proj", "image": "assets/images/building-projects.webp"},
+      {"title": "Carved Bedroom Set — Glossy", "cat": "furn", "image": "assets/images/bedroom-set.webp"},
+      {"title": "Solid Panel Door Manufacturing", "cat": "doors", "image": "assets/images/panel-doors-workshop.webp"},
+      {"title": "Door Set Polish Contract", "cat": "proj", "image": "assets/images/factory-polish-work.webp"},
+      {"title": "Solid Wood Staircase — Oak Finish", "cat": "stairs", "image": "assets/images/staircase-oak-finished.webp"},
+      {"title": "Dressing & Chairs", "cat": "furn", "image": "assets/images/dressing-furniture.webp"},
+      {"title": "Wooden Main Gate", "cat": "doors", "image": "assets/images/wooden-main-gate.webp"},
+      {"title": "Bungalow Window Frames", "cat": "proj", "image": "assets/images/bungalow-window-frames.webp"},
+      {"title": "Built-in Wardrobe — Light Oak", "cat": "furn", "image": "assets/images/wardrobe.webp"},
+      {"title": "Doors Made, Hung & Polished", "cat": "doors", "image": "assets/images/doors-installed.webp"},
+      {"title": "Treads Being Fitted", "cat": "stairs", "image": "assets/images/staircase-installation.jpg"}
+    ]
+  },
+  "contact": {
+    "h1": "Tell us what you need —",
+    "h1_em": "we'll quote it",
+    "phone1": "+92 309 8986264",
+    "phone2": "+92 300 4086113",
+    "whatsapp": "923098986264",
+    "whatsapp_msg": "Assalam-o-Alaikum, I am interested in your polish work / woodwork services. Please share details and a quotation.",
+    "email": "furniturewood786@gmail.com",
+    "address": "House No. 452/A, Street No. 54, Sector C, Sir Syed Ahmad Khan Road, near Maryam Masjid, Manzoor Colony, Karachi, Sindh, Pakistan",
+    "area": "Serving Karachi & surrounding areas",
+    "hours": "Open daily 7:00 AM – 11:30 PM",
+    "form_title": "Send an inquiry",
+    "form_intro": "Your details open in WhatsApp with the message pre-filled — just press send.",
+    "form_services": [
+      "Furniture polish", "Doors & windows polish", "Full building polish", "Factory polish contract",
+      "Bedroom set (manufacturing)", "Chairs & tables (manufacturing)", "Doors & windows (manufacturing)",
+      "Deco / panels / ceilings / kitchen", "Complete building woodwork", "Other"
+    ]
+  },
+  "social": {
+    "links": []
+  },
+  "footer": {
+    "text": "Polish work contractor for homes, factories and buildings in Karachi — and makers of doors, windows, bedroom sets, furniture and deco, finished by our own team.",
+    "copyright": "© 2026 Royal Wood Interiors. All rights reserved.",
+    "right": "amroyalinteriors.com"
+  }
+}
