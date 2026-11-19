@@ -22,13 +22,11 @@ if errorlevel 1 (
 
 git add -A
 git diff --cached --quiet
-if not errorlevel 1 (
-  echo Nothing has changed since the last publish.
-  pause
-  exit /b 0
+if errorlevel 1 (
+  git commit -q -m "Publish site content (%date% %time%)"
+) else (
+  echo No new changes to commit; pushing anything not yet on GitHub.
 )
-
-git commit -q -m "Publish site content (%date% %time%)"
 git push origin main
 if errorlevel 1 (
   echo.
