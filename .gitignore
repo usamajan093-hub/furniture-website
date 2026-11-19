@@ -6,8 +6,11 @@
 Thumbs.db
 *.log
 
-# CMS runtime data (created by install.php)
-cms/data/*
-!cms/data/.htaccess
-uploads/*
-!uploads/.htaccess
+# CMS: content, offers, templates, pages, media index and uploads are tracked
+# (they are what the public site shows, and GitHub keeps a backup).
+# Login data, lock files and logs stay private.
+cms/data/users.json
+cms/data/attempts.json
+cms/data/activity.json
+cms/data/*.lock
+cms/data/*.tmp

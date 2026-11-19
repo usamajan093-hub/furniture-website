@@ -26,6 +26,14 @@ Search `index.html` for these and change them in place:
 
 Photos live in `assets/images/`. Replace a file with one of the same name to swap a picture.
 
+## Daily workflow on this PC (local admin, publish to GitHub Pages)
+
+1. Double-click **`admin-start.cmd`**. It starts PHP and opens http://localhost:8090/admin/ in the browser. Leave the black window open.
+2. Log in and edit offers, photos, text, templates or pages. The local site at http://localhost:8090/ shows the changes at once.
+3. Double-click **`publish.cmd`**. It rebuilds `index.html` from the admin content, commits everything (content files and uploaded photos included) and pushes to GitHub. The live site updates within about a minute.
+
+Content and uploads are kept in git as a backup; the admin login file (`cms/data/users.json`) is never committed. Needs PHP 8 (`winget install PHP.PHP.8.3`) and git.
+
 ## Admin panel (CMS)
 
 The site can also run as a content-managed website on any PHP host (cPanel, shared hosting, XAMPP). No database: all content lives in JSON files under `cms/data/`.
