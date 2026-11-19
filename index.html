@@ -6,598 +6,46 @@
 <title>AM Royal Interiors | Wood Polish, Deco &amp; Woodwork Contractor — Karachi</title>
 <meta name="description" content="Royal Wood Interiors — polish work contractor for homes, factories and buildings in Karachi. PU, melamine, lacquer, matt and glossy finishes, plus doors, windows, bedroom sets, wardrobes, chairs, tables and deco made by our own team.">
 <meta name="theme-color" content="#0a0807">
-<link rel="canonical" href="https://amroyalinteriors.com/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Royal Wood Polish, Deco &amp; Interiors — amroyalinteriors.com">
-<meta property="og:description" content="Complete polish work for homes, factories and buildings — and every kind of woodwork too.">
+<meta property="og:title" content="AM Royal Interiors | Wood Polish, Deco &amp; Woodwork Contractor — Karachi">
+<meta property="og:description" content="Royal Wood Interiors — polish work contractor for homes, factories and buildings in Karachi. PU, melamine, lacquer, matt and glossy finishes, plus doors, windows, bedroom sets, wardrobes, chairs, tables and deco made by our own team.">
 <meta property="og:image" content="assets/images/door-polished-walnut.webp">
 <link rel="icon" href="assets/favicon.svg?v=5" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-/* ---------- tokens ---------- */
-:root{
-  --bg:#0a0807;--surface:#14100d;--surface-2:#1d1712;--gold:#d4b06a;--gold-light:#f0d9a4;
-  --text:#fffaf0;--muted:#c9bfad;--border:rgba(212,176,106,.22);
-  --grad:linear-gradient(135deg,#f6e3b0 0%,#d4b06a 50%,#b88a3e 100%);
-  --serif:"Playfair Display",Georgia,serif;--sans:"Inter",system-ui,sans-serif;
-  --ease:cubic-bezier(.2,.8,.2,1);--sec:110px;--head:84px;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-html,body{overflow-x:hidden}
-body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
-body.locked{overflow:hidden}
-::selection{background:var(--gold);color:#0a0807}
-img{display:block;max-width:100%}
-a{color:inherit;text-decoration:none}
-button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
-h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.12;color:#fff}
-h1{font-size:clamp(2.6rem,6vw,5rem);letter-spacing:-.01em}
-h2{font-size:clamp(2rem,4vw,3.3rem)}
-h3{font-size:1.3rem}
-em,.g{font-style:italic;font-weight:500;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-p{color:var(--muted)}
-.wrap{width:min(1180px,100% - 48px);margin-inline:auto}
-section{padding:var(--sec) 0}
-.eyebrow{display:inline-flex;align-items:center;gap:14px;font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:22px}
-.eyebrow::before{content:"";width:34px;height:1px;background:var(--gold)}
-.lead{font-size:1.1rem;max-width:620px}
-.center{text-align:center}
-.center .eyebrow::after{content:"";width:34px;height:1px;background:var(--gold)}
-.sec-head{max-width:760px;margin-bottom:60px}
-.sec-head.center{margin-inline:auto}
-.sec-head h2{margin-bottom:18px}
-
-/* ---------- buttons ---------- */
-.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 30px;font-weight:600;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--gold);transition:transform .35s var(--ease),box-shadow .35s,background .35s,color .35s}
-.btn-primary{background:var(--grad);color:#0a0807;border-color:transparent}
-.btn-ghost{color:var(--gold-light)}
-.btn:hover{transform:translateY(-2px);box-shadow:0 12px 34px rgba(212,176,106,.28)}
-.btn-ghost:hover{background:rgba(212,176,106,.08)}
-.btns{display:flex;flex-wrap:wrap;gap:16px}
-
-/* ---------- reveal ---------- */
-.reveal{opacity:0;transform:translateY(34px);transition:opacity .9s ease,transform .9s var(--ease);transition-delay:var(--d,0s)}
-.reveal.in{opacity:1;transform:none}
-
-/* ---------- intro ---------- */
-#intro{position:fixed;inset:0;z-index:1000;background:#000;display:grid;place-items:center;transition:opacity 1.5s ease,transform 1.5s var(--ease)}
-#intro.out{opacity:0;transform:scale(1.25);pointer-events:none}
-.intro-box{position:relative;text-align:center;padding:48px 20px}
-.intro-word{font-family:var(--serif);font-weight:600;font-size:clamp(3.4rem,17vw,10rem);letter-spacing:.12em;line-height:1;display:flex;justify-content:center;padding-left:.12em;position:relative}
-.intro-word span{display:inline-block;opacity:0;transform:translateY(60px) scale(.8);filter:blur(14px);background:linear-gradient(110deg,#b88a3e 0%,#f6e3b0 35%,#d4b06a 55%,#b88a3e 100%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:rise 1s var(--ease) forwards,shine 2.2s ease-in-out 1.6s forwards}
-@keyframes rise{to{opacity:1;transform:none;filter:blur(0)}}
-@keyframes shine{0%{background-position:0% 0}100%{background-position:200% 0}}
-.intro-line{height:1px;width:0;margin:0 auto;background:linear-gradient(90deg,transparent,var(--gold),transparent);animation:grow 1.4s var(--ease) 1.2s forwards}
-.intro-line.top{margin-bottom:28px}.intro-line.bottom{margin-top:28px}
-@keyframes grow{to{width:min(280px,70vw)}}
-.intro-sub{margin-top:26px;font-size:.78rem;letter-spacing:.7em;padding-left:.7em;text-transform:uppercase;color:var(--gold-light);opacity:0;animation:fade 1s ease 1.7s forwards}
-@keyframes fade{to{opacity:1}}
-
-/* ---------- header ---------- */
-.header{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--head);display:flex;align-items:center;transition:background .4s,border-color .4s,height .4s}
-.header::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--gold);opacity:0;transition:opacity .4s}
-.header.scrolled{background:rgba(10,8,7,.94);backdrop-filter:blur(12px);height:72px}
-.header.scrolled::after{opacity:.6}
-.header .wrap{display:flex;align-items:center;justify-content:space-between}
-.logo{display:flex;align-items:center;gap:14px}
-.logo-mark{width:46px;height:46px;border:1.5px solid var(--gold);display:grid;place-items:center;font-family:var(--serif);font-weight:700;font-size:1.5rem;color:var(--gold-light);background:rgba(212,176,106,.06)}
-.logo-text{line-height:1.15}
-.logo-text b{display:block;font-family:var(--serif);font-weight:600;font-size:1.05rem;letter-spacing:.12em;color:#fff}
-.logo-text small{display:block;font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
-.nav{display:flex;gap:38px}
-.nav a{font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);padding:8px 0;position:relative;transition:color .3s}
-.nav a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
-.nav a:hover,.nav a.active{color:#fff}
-.nav a.active::after{transform:scaleX(1)}
-.burger{display:none;width:44px;height:44px;flex-direction:column;justify-content:center;align-items:center;gap:6px;border:1px solid var(--border)}
-.burger span{width:20px;height:1.5px;background:var(--gold-light);transition:transform .4s var(--ease),opacity .3s}
-.burger.open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
-.burger.open span:nth-child(2){opacity:0}
-.burger.open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
-.menu{position:fixed;inset:0;z-index:90;background:rgba(10,8,7,.98);display:flex;flex-direction:column;justify-content:center;align-items:center;gap:30px;opacity:0;visibility:hidden;transition:opacity .4s,visibility 0s .4s}
-.menu.open{opacity:1;visibility:visible;transition:opacity .4s}
-.menu a{font-family:var(--serif);font-size:2.2rem;color:#fff;letter-spacing:.06em;position:relative}
-.menu a.active{color:var(--gold-light)}
-.menu .menu-foot{margin-top:30px;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
-
-/* ---------- pages ---------- */
-.page{display:none}
-.page.active{display:block}
-.page-head{padding:calc(var(--head) + 110px) 0 70px;border-bottom:1px solid var(--border);background:radial-gradient(900px 400px at 15% 0%,rgba(212,176,106,.12),transparent 60%)}
-.page-head h1{max-width:900px}
-
-/* ---------- hero ---------- */
-.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:hidden;padding:calc(var(--head) + 40px) 0 80px}
-.hero-bg{position:absolute;inset:0;z-index:0}
-.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center;animation:kb 28s ease-in-out infinite alternate}
-@keyframes kb{from{transform:scale(1)}to{transform:scale(1.12)}}
-.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,8,7,.94) 0%,rgba(10,8,7,.72) 45%,rgba(10,8,7,.28) 100%),linear-gradient(180deg,rgba(10,8,7,.25),rgba(10,8,7,.75))}
-.hero .wrap{position:relative;z-index:1}
-.hero h1{margin-bottom:26px;max-width:860px}
-.hero .lead{margin-bottom:40px}
-.pills{display:flex;flex-wrap:wrap;gap:12px;margin-top:56px}
-.pill{padding:11px 18px;font-size:.78rem;color:var(--gold-light);border:1px solid var(--border);background:rgba(20,16,13,.45);backdrop-filter:blur(8px)}
-
-/* ---------- marquee ---------- */
-.marquee{background:#000;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);padding:20px 0;overflow:hidden}
-.marquee-track{display:flex;width:max-content;animation:scroll 32s linear infinite}
-.marquee span{font-family:var(--serif);font-style:italic;font-size:1.35rem;color:var(--gold);white-space:nowrap;padding:0 28px}
-.marquee span::after{content:"◆";font-style:normal;font-size:.55rem;margin-left:56px;vertical-align:middle;color:var(--gold-light)}
-@keyframes scroll{to{transform:translateX(-50%)}}
-
-/* ---------- cards ---------- */
-.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
-.card{display:block;background:var(--surface);border:1px solid var(--border);overflow:hidden;transition:transform .5s var(--ease),box-shadow .5s,border-color .5s}
-.card:hover{transform:translateY(-6px);box-shadow:0 24px 60px rgba(212,176,106,.16);border-color:rgba(212,176,106,.5)}
-.card-img{aspect-ratio:4/5;overflow:hidden}
-.card-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
-.card:hover .card-img img{transform:scale(1.08)}
-.card-body{padding:26px 24px 28px}
-.card-num{font-family:var(--serif);font-size:.95rem;color:var(--gold);letter-spacing:.2em;margin-bottom:10px}
-.card h3{margin-bottom:10px;font-size:1.25rem}
-.card p{font-size:.92rem}
-.card .more{display:inline-block;margin-top:16px;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-light)}
-
-/* ---------- before / after ---------- */
-.split{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
-.chips{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 34px}
-.chip{padding:9px 16px;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-light);border:1px solid var(--border)}
-.ba{position:relative;aspect-ratio:4/5;overflow:hidden;border:1px solid var(--border);user-select:none;touch-action:pan-y;box-shadow:0 30px 80px rgba(0,0,0,.55)}
-.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
-.ba .before{clip-path:inset(0 calc(100% - var(--pos,50%)) 0 0)}
-.ba-handle{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:2px;background:var(--gold);transform:translateX(-50%);pointer-events:none;box-shadow:0 0 18px rgba(212,176,106,.7)}
-.ba-handle::after{content:"";position:absolute;top:50%;left:50%;width:52px;height:52px;border-radius:50%;transform:translate(-50%,-50%);background:var(--grad) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230a0807' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m9 7-5 5 5 5M15 7l5 5-5 5'/%3E%3C/svg%3E") center/24px no-repeat;box-shadow:0 8px 24px rgba(0,0,0,.5)}
-.ba input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize}
-.ba-label{position:absolute;top:16px;padding:7px 13px;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;background:rgba(10,8,7,.75);color:var(--gold-light);border:1px solid var(--border);pointer-events:none}
-.ba-label.l{left:16px}.ba-label.r{right:16px;background:var(--grad);color:#0a0807;border-color:transparent}
-
-/* ---------- process ---------- */
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:40px 32px}
-.step .num{font-family:var(--serif);font-size:4.4rem;line-height:1;color:transparent;-webkit-text-stroke:1px var(--gold);margin-bottom:18px}
-.step h3{margin-bottom:10px;font-size:1.15rem}
-.step p{font-size:.92rem}
-
-/* ---------- why ---------- */
-.why{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--border)}
-.why div{padding:38px 34px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);transition:background .4s}
-.why div:nth-child(3n){border-right:0}
-.why div:nth-child(n+4){border-bottom:0}
-.why div:hover{background:rgba(212,176,106,.05)}
-.why h3{font-size:1.15rem;margin-bottom:10px}
-.why p{font-size:.92rem}
-.why i{display:block;width:30px;height:1px;background:var(--gold);margin-bottom:20px}
-
-/* ---------- cta ---------- */
-.cta{position:relative;text-align:center;overflow:hidden;background:radial-gradient(700px 360px at 50% 100%,rgba(212,176,106,.22),transparent 70%),var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-.cta h2{max-width:780px;margin:0 auto 20px}
-.cta p{margin:0 auto 38px;max-width:560px}
-.cta .btns{justify-content:center}
-
-/* ---------- about ---------- */
-.frame{position:relative;padding:0 24px 24px 0}
-.frame img{width:100%;aspect-ratio:4/5;object-fit:cover;position:relative;z-index:1}
-.frame::after{content:"";position:absolute;top:24px;left:24px;right:0;bottom:0;border:1px solid var(--gold)}
-.boxes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.box{padding:34px 30px;background:var(--surface);border:1px solid var(--border)}
-.box h3{font-size:1.15rem;margin:14px 0 10px}
-.box p{font-size:.92rem}
-.box i{display:block;width:30px;height:1px;background:var(--gold)}
-.photos2{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px}
-.photos2 img{width:100%;aspect-ratio:3/2;object-fit:cover;border:1px solid var(--border)}
-
-/* ---------- portfolio ---------- */
-.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:44px}
-.filters button{padding:11px 20px;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);border:1px solid var(--border);transition:all .3s}
-.filters button:hover{color:#fff;border-color:var(--gold)}
-.filters button.active{background:var(--grad);color:#0a0807;border-color:transparent}
-.masonry{columns:3;column-gap:22px}
-.item{break-inside:avoid;margin-bottom:22px;position:relative;overflow:hidden;border:1px solid var(--border);cursor:zoom-in;background:var(--surface)}
-.item img{width:100%;transition:transform 1.2s var(--ease)}
-.item:hover img{transform:scale(1.06)}
-.item figcaption{position:absolute;left:0;right:0;bottom:0;padding:50px 22px 20px;background:linear-gradient(180deg,transparent,rgba(10,8,7,.92));transform:translateY(100%);transition:transform .5s var(--ease)}
-.item:hover figcaption{transform:none}
-.item small{display:block;font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
-.item b{font-family:var(--serif);font-weight:500;font-size:1.1rem;color:#fff}
-.item.hide{display:none}
-@media (hover:none){.item figcaption{transform:none}}
-.lightbox{position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.94);display:grid;place-items:center;padding:24px;opacity:0;visibility:hidden;transition:opacity .4s,visibility 0s .4s;cursor:zoom-out}
-.lightbox.open{opacity:1;visibility:visible;transition:opacity .4s}
-.lightbox img{max-width:100%;max-height:92vh;object-fit:contain;border:1px solid var(--border)}
-.lightbox p{position:absolute;bottom:26px;left:0;right:0;text-align:center;font-family:var(--serif);font-style:italic;color:var(--gold-light);font-size:1.1rem}
-
-/* ---------- contact ---------- */
-.contact{display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:start}
-.info{display:grid;gap:14px}
-.info a.card-i,.info div.card-i{display:flex;gap:18px;padding:22px 24px;background:var(--surface);border:1px solid var(--border);transition:border-color .3s,transform .3s}
-.info a.card-i:hover{border-color:var(--gold);transform:translateX(4px)}
-.card-i svg{width:22px;height:22px;flex:none;stroke:var(--gold);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;margin-top:3px}
-.card-i b{display:block;font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
-.card-i span{display:block;color:#fff;font-size:.98rem}
-.card-i small{display:block;color:var(--muted);font-size:.85rem;margin-top:3px}
-.form{padding:40px;background:var(--surface);border:1px solid var(--border)}
-.form h3{margin-bottom:6px}
-.form>p{font-size:.9rem;margin-bottom:26px}
-.field{margin-bottom:18px}
-.field label{display:block;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
-.field input,.field select,.field textarea{width:100%;padding:15px 16px;background:var(--surface-2);border:1px solid var(--border);color:#fff;font:inherit;font-size:.95rem;transition:border-color .3s}
-.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--gold)}
-.field select option{background:#1d1712}
-.field textarea{min-height:130px;resize:vertical}
-.form .btn{width:100%;justify-content:center;margin-top:8px}
-.form-note{font-size:.8rem;margin-top:14px;text-align:center}
-
-/* ---------- footer ---------- */
-footer{border-top:1px solid var(--border);padding:70px 0 34px;background:#070605}
-.foot{display:grid;grid-template-columns:1.4fr 1fr 1.2fr;gap:50px;margin-bottom:50px}
-.foot p{font-size:.9rem;margin-top:18px;max-width:380px}
-.foot h4{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-family:var(--sans);font-weight:600;margin-bottom:18px}
-.foot ul{list-style:none;display:grid;gap:10px}
-.foot li a{color:var(--muted);font-size:.92rem;transition:color .3s}
-.foot li a:hover{color:var(--gold-light)}
-.copy{border-top:1px solid var(--border);padding-top:26px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:.8rem;color:var(--muted)}
-.wa{position:fixed;right:22px;bottom:22px;z-index:80;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.4);transition:transform .3s}
-.wa:hover{transform:scale(1.08)}
-.wa svg{width:28px;height:28px;fill:#fff}
-
-/* ---------- responsive ---------- */
-@media (max-width:1024px){
-  .grid4{grid-template-columns:repeat(2,1fr)}
-  .steps{grid-template-columns:repeat(2,1fr)}
-  .masonry{columns:2}
-  .foot{grid-template-columns:1fr 1fr}
-}
-@media (max-width:860px){
-  :root{--sec:80px;--head:72px}
-  .nav{display:none}
-  .burger{display:flex}
-  .split,.contact{grid-template-columns:1fr;gap:44px}
-  .why{grid-template-columns:1fr}
-  .why div{border-right:0}
-  .why div:nth-child(n+4){border-bottom:1px solid var(--border)}
-  .why div:last-child{border-bottom:0}
-  .boxes{grid-template-columns:1fr}
-  .photos2{grid-template-columns:1fr}
-  .hero-bg img{object-position:40% center}
-  .form{padding:28px 22px}
-  .foot{grid-template-columns:1fr;gap:34px}
-}
-@media (max-width:560px){
-  .grid4,.steps{grid-template-columns:1fr}
-  .masonry{columns:1}
-  .btn{width:100%;justify-content:center}
-  .wrap{width:min(1180px,100% - 32px)}
-}
-@media (prefers-reduced-motion:reduce){
-  .hero-bg img,.marquee-track{animation:none}
-  .reveal{transition:none}
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&amp;family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/theme.css?v=1795007859">
+<style>:root{--bg:#0a0807;--surface:#14100d;--surface-2:#1d1712;--gold:#d4b06a;--gold-light:#f0d9a4;--gold-dark:#b88a3e;--gold-pale:#f6e3b0;--heading:#ffffff;--text:#fffaf0;--muted:#c9bfad;--on-gold:#0a0807;--intro-bg:#000000;--marquee-bg:#000000;--footer-bg:#070605;--footer-text:#c9bfad;--border:rgba(212,176,106,0.22);--gold-rgb:212,176,106;--bg-rgb:10,8,7;--grad:linear-gradient(135deg,#f6e3b0 0%,#d4b06a 50%,#b88a3e 100%);--serif:"Playfair Display",Georgia,serif;--sans:"Inter",system-ui,sans-serif;--radius:0;--radius-lg:0;--sec:110px;}</style>
 </head>
 <body class="locked">
-
-<!-- ================= INTRO ================= -->
-<div id="intro" aria-hidden="true">
-  <div class="intro-box">
-    <div class="intro-line top"></div>
-    <div class="intro-word" id="intro-word">ROYAL</div>
-    <div class="intro-line bottom"></div>
-    <div class="intro-sub">Interiors</div>
-  </div>
-</div>
-
-<!-- ================= HEADER ================= -->
-<header class="header" id="header">
-  <div class="wrap">
-    <a class="logo" href="#home" data-route="home" aria-label="Royal Interiors — home">
-      <span class="logo-mark">R</span>
-      <span class="logo-text"><b>ROYAL INTERIORS</b><small>Wood Polish · Deco</small></span>
-    </a>
-    <nav class="nav" aria-label="Main">
-      <a href="#home" data-route="home">Home</a>
-      <a href="#portfolio" data-route="portfolio">Portfolio</a>
-      <a href="#about" data-route="about">About</a>
-      <a href="#contact" data-route="contact">Contact</a>
-    </nav>
-    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </div>
-</header>
-<div class="menu" id="menu">
-  <a href="#home" data-route="home">Home</a>
-  <a href="#portfolio" data-route="portfolio">Portfolio</a>
-  <a href="#about" data-route="about">About</a>
-  <a href="#contact" data-route="contact">Contact</a>
-  <span class="menu-foot">+92 309 8986264 · Karachi</span>
-</div>
-
+<div id="intro" aria-hidden="true"><div class="intro-box"><div class="intro-line top"></div><div class="intro-word" id="intro-word">ROYAL</div><div class="intro-line bottom"></div><div class="intro-sub">Interiors</div></div></div>
+<header class="header" id="header"><div class="wrap"><a class="logo" href="#home" data-route="home" aria-label="Home"><span class="logo-mark">R</span><span class="logo-text"><b>ROYAL INTERIORS</b><small>Wood Polish · Deco</small></span></a><nav class="nav" aria-label="Main"><a href="#home" data-route="home">Home</a><a href="#portfolio" data-route="portfolio">Portfolio</a><a href="#about" data-route="about">About</a><a href="#contact" data-route="contact">Contact</a></nav><button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button></div></header>
+<div class="menu" id="menu"><a href="#home" data-route="home">Home</a><a href="#portfolio" data-route="portfolio">Portfolio</a><a href="#about" data-route="about">About</a><a href="#contact" data-route="contact">Contact</a><span class="menu-foot">+92 309 8986264 · Karachi</span></div>
 <main>
-<!-- ================= HOME ================= -->
 <div class="page" id="page-home">
-  <section class="hero" style="padding-top:calc(var(--head) + 40px)">
-    <div class="hero-bg"><img src="assets/images/hero-doors-collage.jpg" alt="Solid wood doors with brass handles, polished in natural teak finish" fetchpriority="high"></div>
-    <div class="wrap">
-      <span class="eyebrow">Contractor · Factory Polish Work · Deco</span>
-      <h1>Royal Wood Polish, <em>Deco &amp; Interiors</em></h1>
-      <p class="lead">Complete polish work for homes, factories and buildings — and every kind of woodwork too. Doors, windows, bedroom sets, wardrobes, chairs, tables and deco: made, installed and finished by our own team.</p>
-      <div class="btns">
-        <a class="btn btn-primary" href="#portfolio" data-route="portfolio">Explore Our Work →</a>
-        <a class="btn btn-ghost" href="#contact" data-route="contact">Request a Consultation</a>
-      </div>
-      <div class="pills">
-        <span class="pill">PU · Melamine · Lacquer · Matt · Glossy</span>
-        <span class="pill">We make the woodwork — not only polish it</span>
-        <span class="pill">Factory contracts &amp; full building projects</span>
-      </div>
-    </div>
-  </section>
-
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee-track" id="marquee">
-      <span>PU Polish</span><span>Melamine</span><span>Lacquer</span><span>Matt Finish</span><span>Glossy Finish</span><span>Doors &amp; Windows</span><span>Bedroom Sets</span><span>Deco &amp; Panels</span><span>Building Projects</span>
-    </div>
-  </div>
-
-  <section>
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <span class="eyebrow">What We Do</span>
-        <h2>Polish is our specialty — <em>and we build</em> all kinds of woodwork too</h2>
-        <p class="lead">We are polish contractors for homes, factories and buildings. Around that core we manufacture furniture, doors, windows and deco, and take on complete buildings as one contract.</p>
-      </div>
-      <div class="grid4">
-        <a class="card reveal" href="#portfolio?cat=polish" data-route="portfolio" data-cat="polish" style="--d:0s">
-          <div class="card-img"><img src="assets/images/door-polished-walnut.webp" alt="Main door polished in deep walnut" loading="lazy"></div>
-          <div class="card-body"><div class="card-num">01</div><h3>Polish Work</h3><p>Homes, factories &amp; buildings. PU, melamine, lacquer, matt or glossy — on new work and on pieces you already own.</p><span class="more">View work →</span></div>
-        </a>
-        <a class="card reveal" href="#portfolio?cat=furn" data-route="portfolio" data-cat="furn" style="--d:.1s">
-          <div class="card-img"><img src="assets/images/bedroom-set.webp" alt="Carved bedroom set in glossy polish" loading="lazy"></div>
-          <div class="card-body"><div class="card-num">02</div><h3>Furniture &amp; Bedroom Sets</h3><p>Beds, wardrobes, dressing tables, chairs and tables — made in our workshop and polished to one finish.</p><span class="more">View work →</span></div>
-        </a>
-        <a class="card reveal" href="#portfolio?cat=doors" data-route="portfolio" data-cat="doors" style="--d:.2s">
-          <div class="card-img"><img src="assets/images/doors-installed.webp" alt="Dark polished grooved door with glass strip" loading="lazy"></div>
-          <div class="card-body"><div class="card-num">03</div><h3>Doors, Windows &amp; Deco</h3><p>Doors and windows made, hung and polished; wall panels, ceilings, TV walls and kitchens.</p><span class="more">View work →</span></div>
-        </a>
-        <a class="card reveal" href="#portfolio?cat=proj" data-route="portfolio" data-cat="proj" style="--d:.3s">
-          <div class="card-img"><img src="assets/images/building-projects.webp" alt="Building with wooden window frames on every floor" loading="lazy"></div>
-          <div class="card-body"><div class="card-num">04</div><h3>Building &amp; Factory Projects</h3><p>Full buildings, big project sets and factory polish contracts handled by one contractor.</p><span class="more">View work →</span></div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
-    <div class="wrap split">
-      <div class="reveal">
-        <span class="eyebrow">Before &amp; After</span>
-        <h2>Drag the handle — <em>see what polish changes</em></h2>
-        <p class="lead" style="margin-top:18px">A raw solid wood main door on the left, the same door after staining and PU polish on the right. Every finish we apply is prepared the same way: sanded in stages, sealed, stained to an approved sample and built up in thin coats.</p>
-        <div class="chips"><span class="chip">PU</span><span class="chip">Melamine</span><span class="chip">Lacquer</span><span class="chip">Matt</span><span class="chip">Glossy</span></div>
-        <a class="btn btn-ghost" href="#contact" data-route="contact">Get a Polish Quote</a>
-      </div>
-      <div class="reveal" style="--d:.15s">
-        <div class="ba" id="ba" style="--pos:50%">
-          <img src="assets/images/door-polished-walnut.webp" alt="Main door after walnut PU polish" loading="lazy">
-          <img class="before" src="assets/images/door-raw-before-polish.webp" alt="Main door in raw wood before polish" loading="lazy">
-          <div class="ba-handle"></div>
-          <span class="ba-label l">Before</span><span class="ba-label r">After</span>
-          <input type="range" min="0" max="100" value="50" aria-label="Compare before and after polishing">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="sec-head center reveal">
-        <span class="eyebrow">Our Process</span>
-        <h2>From raw woodwork <em>to final finish</em></h2>
-      </div>
-      <div class="steps">
-        <div class="step reveal" style="--d:0s"><div class="num">01</div><h3>Consultation &amp; Measurement</h3><p>You tell us the scope — polish only, specific pieces, a factory contract or a complete building. We visit, measure and advise.</p></div>
-        <div class="step reveal" style="--d:.1s"><div class="num">02</div><h3>Design &amp; Finish Samples</h3><p>Designs, wood types and finish samples on your actual wood, with a clear itemised quotation.</p></div>
-        <div class="step reveal" style="--d:.2s"><div class="num">03</div><h3>Manufacturing &amp; Installation</h3><p>Doors, windows, furniture and deco built in our workshop and installed on site by our team.</p></div>
-        <div class="step reveal" style="--d:.3s"><div class="num">04</div><h3>Polish &amp; Handover</h3><p>Every surface stained and finished by hand and spray, inspected with you in daylight, then handed over.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section style="padding-top:0">
-    <div class="wrap">
-      <div class="sec-head center reveal">
-        <span class="eyebrow">Why Royal Interiors</span>
-        <h2>Polish-first craftsmanship <em>from a team that builds</em></h2>
-      </div>
-      <div class="why reveal">
-        <div><i></i><h3>Polish is our specialty</h3><p>Most workshops treat polish as the last step. For us it's the main event — done properly, in the finish you choose.</p></div>
-        <div><i></i><h3>Factory &amp; contract experience</h3><p>Door sets and furniture finished in volume — the same standard on the hundredth piece as on the first.</p></div>
-        <div><i></i><h3>We build what we finish</h3><p>Doors, windows, bedroom sets, chairs, tables and deco made by us, so the finish is planned from the first cut.</p></div>
-        <div><i></i><h3>One contractor, whole building</h3><p>Doors, windows, bedrooms, kitchen, deco and polish from one team — one consistent finish, one point of contact.</p></div>
-        <div><i></i><h3>Clear quotations</h3><p>Itemised quotes before work begins. Changes are discussed and agreed with you first.</p></div>
-        <div><i></i><h3>Inspected with you</h3><p>Nothing is finished until you've seen it, opened every door and drawer, and are happy with the result.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta">
-    <div class="wrap reveal">
-      <span class="eyebrow">Start Your Project</span>
-      <h2>One door, a factory contract or an <em>entire building</em></h2>
-      <p>Send photos of the furniture or the site, or describe your plans. We'll reply with questions, options and a quotation.</p>
-      <div class="btns">
-        <a class="btn btn-primary" href="#contact" data-route="contact">Request a Consultation</a>
-        <a class="btn btn-ghost" href="tel:+923098986264">Call +92 309 8986264</a>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ================= ABOUT ================= -->
-<div class="page" id="page-about">
-  <div class="page-head">
-    <div class="wrap">
-      <span class="eyebrow">About</span>
-      <h1>Polish is our specialty. <em>Woodwork is our craft.</em></h1>
-    </div>
-  </div>
-  <section>
-    <div class="wrap split">
-      <div class="reveal">
-        <span class="eyebrow">Who We Are</span>
-        <h2>A polish contractor <em>that builds, too</em></h2>
-        <p class="lead" style="margin-top:18px">Royal Wood Interiors is a polish contractor for homes, factories and buildings in Karachi. Polish is our main event, not the last step: furniture, bedroom sets, doors, windows and whole buildings, finished in PU, melamine, lacquer, matt or glossy.</p>
-        <p style="margin-top:16px">We are not only polishers. We manufacture furniture, bedroom sets, doors, windows and deco in our own workshop, so you can order the piece, the room or the whole building from one contractor — and every surface carries the same finish.</p>
-        <div class="chips"><span class="chip">Furniture polish</span><span class="chip">Bedroom set polish</span><span class="chip">Doors &amp; windows</span><span class="chip">Full building polish</span><span class="chip">Factory contracts</span><span class="chip">Wood staining &amp; deco shades</span><span class="chip">Repolishing old furniture</span></div>
-        <a class="btn btn-primary" href="#contact" data-route="contact">Work With Us</a>
-      </div>
-      <div class="frame reveal" style="--d:.15s"><img src="assets/images/panel-doors-workshop.webp" alt="Solid wood panel doors made in our workshop, before polish" loading="lazy"></div>
-    </div>
-  </section>
-  <section style="padding-top:0">
-    <div class="wrap">
-      <div class="sec-head reveal"><span class="eyebrow">How We Work</span><h2>Straight answers, <em>real work</em></h2></div>
-      <div class="boxes">
-        <div class="box reveal" style="--d:0s"><i></i><h3>Real work, real photos</h3><p>Every photograph on this site is of our own jobs — doors, staircases, window frames and furniture we made or polished.</p></div>
-        <div class="box reveal" style="--d:.1s"><i></i><h3>Clear quotations</h3><p>Itemised before work begins. If something changes, we discuss and agree it with you first.</p></div>
-        <div class="box reveal" style="--d:.2s"><i></i><h3>Inspected with you</h3><p>Nothing is finished until you've seen it in daylight and under room lighting and are happy.</p></div>
-      </div>
-      <div class="photos2">
-        <img class="reveal" src="assets/images/wooden-main-gate.webp" alt="Timber main gate in natural finish" loading="lazy">
-        <img class="reveal" style="--d:.15s" src="assets/images/staircase-oak-finished.webp" alt="Solid wood staircase finished in oak" loading="lazy">
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ================= PORTFOLIO ================= -->
-<div class="page" id="page-portfolio">
-  <div class="page-head">
-    <div class="wrap">
-      <span class="eyebrow">Portfolio</span>
-      <h1>Real projects, <em>real craftsmanship</em></h1>
-    </div>
-  </div>
-  <section>
-    <div class="wrap">
-      <div class="filters" id="filters" role="group" aria-label="Filter projects">
-        <button class="active" data-f="all">All</button>
-        <button data-f="polish">Polish Work</button>
-        <button data-f="furn">Furniture &amp; Bedroom Sets</button>
-        <button data-f="doors">Doors, Windows &amp; Gates</button>
-        <button data-f="stairs">Staircases</button>
-        <button data-f="proj">Buildings &amp; Factories</button>
-      </div>
-      <div class="masonry" id="masonry">
-        <figure class="item reveal" data-cat="polish"><img src="assets/images/door-polished-walnut.webp" alt="Walnut PU main door" loading="lazy"><figcaption><small>Polish Work</small><b>Walnut PU Main Door</b></figcaption></figure>
-        <figure class="item reveal" data-cat="proj"><img src="assets/images/building-projects.webp" alt="Wooden windows across a full building" loading="lazy"><figcaption><small>Buildings &amp; Factories</small><b>Wooden Windows — Full Building</b></figcaption></figure>
-        <figure class="item reveal" data-cat="furn"><img src="assets/images/bedroom-set.webp" alt="Carved bedroom set in glossy polish" loading="lazy"><figcaption><small>Furniture &amp; Bedroom Sets</small><b>Carved Bedroom Set — Glossy</b></figcaption></figure>
-        <figure class="item reveal" data-cat="doors"><img src="assets/images/panel-doors-workshop.webp" alt="Solid panel doors in the workshop" loading="lazy"><figcaption><small>Doors, Windows &amp; Gates</small><b>Solid Panel Door Manufacturing</b></figcaption></figure>
-        <figure class="item reveal" data-cat="proj"><img src="assets/images/factory-polish-work.webp" alt="Door set being polished on a factory contract" loading="lazy"><figcaption><small>Buildings &amp; Factories</small><b>Door Set Polish Contract</b></figcaption></figure>
-        <figure class="item reveal" data-cat="stairs"><img src="assets/images/staircase-oak-finished.webp" alt="Solid wood staircase in oak finish" loading="lazy"><figcaption><small>Staircases</small><b>Solid Wood Staircase — Oak Finish</b></figcaption></figure>
-        <figure class="item reveal" data-cat="furn"><img src="assets/images/dressing-furniture.webp" alt="Dressing table with twin mirrors" loading="lazy"><figcaption><small>Furniture &amp; Bedroom Sets</small><b>Dressing &amp; Chairs</b></figcaption></figure>
-        <figure class="item reveal" data-cat="doors"><img src="assets/images/wooden-main-gate.webp" alt="Wooden main gate" loading="lazy"><figcaption><small>Doors, Windows &amp; Gates</small><b>Wooden Main Gate</b></figcaption></figure>
-        <figure class="item reveal" data-cat="proj"><img src="assets/images/bungalow-window-frames.webp" alt="Bungalow window frames installed" loading="lazy"><figcaption><small>Buildings &amp; Factories</small><b>Bungalow Window Frames</b></figcaption></figure>
-        <figure class="item reveal" data-cat="furn"><img src="assets/images/wardrobe.webp" alt="Built-in wardrobe in light oak" loading="lazy"><figcaption><small>Furniture &amp; Bedroom Sets</small><b>Built-in Wardrobe — Light Oak</b></figcaption></figure>
-        <figure class="item reveal" data-cat="doors"><img src="assets/images/doors-installed.webp" alt="Doors made, hung and polished" loading="lazy"><figcaption><small>Doors, Windows &amp; Gates</small><b>Doors Made, Hung &amp; Polished</b></figcaption></figure>
-        <figure class="item reveal" data-cat="stairs"><img src="assets/images/staircase-installation.jpg" alt="Staircase treads being fitted" loading="lazy"><figcaption><small>Staircases</small><b>Treads Being Fitted</b></figcaption></figure>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ================= CONTACT ================= -->
-<div class="page" id="page-contact">
-  <div class="page-head">
-    <div class="wrap">
-      <span class="eyebrow">Contact</span>
-      <h1>Tell us what you need — <em>we'll quote it</em></h1>
-    </div>
-  </div>
-  <section>
-    <div class="wrap contact">
-      <div class="info">
-        <a class="card-i reveal" href="tel:+923098986264"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><b>Phone</b><span>+92 309 8986264</span><small>Tap to call</small></div></a>
-        <a class="card-i reveal" style="--d:.05s" href="tel:+923004086113"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><b>Phone 2</b><span>+92 300 4086113</span><small>Tap to call</small></div></a>
-        <a class="card-i reveal" style="--d:.1s" href="https://wa.me/923098986264?text=Assalam-o-Alaikum%2C%20I%20am%20interested%20in%20your%20polish%20work%20%2F%20woodwork%20services.%20Please%20share%20details%20and%20a%20quotation." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M20.5 3.5A11.8 11.8 0 0 0 2.3 17.7L1 23l5.4-1.4A11.8 11.8 0 0 0 20.5 3.5z"/><path d="M8.5 7.5c.3-.6.6-.6.9-.6h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.4.4c-.2.2-.3.3-.1.6a9 9 0 0 0 1.7 2.1 8 8 0 0 0 2.4 1.5c.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.4.2.5.3 0 .2 0 .9-.3 1.6-.3.8-1.6 1.5-2.2 1.5-.6.1-1.2.3-4-1-3.3-1.5-5.5-5-5.6-5.2-.2-.3-1.3-1.8-1.3-3.4 0-1.6.8-2.4 1.1-2.7z"/></svg><div><b>WhatsApp</b><span>Chat with us</span><small>Send photos for a quick estimate</small></div></a>
-        <a class="card-i reveal" style="--d:.15s" href="mailto:furniturewood786@gmail.com"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg><div><b>Email</b><span>furniturewood786@gmail.com</span></div></a>
-        <div class="card-i reveal" style="--d:.2s"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><b>Address</b><span>House No. 452/A, Street No. 54, Sector C, Sir Syed Ahmad Khan Road, near Maryam Masjid, Manzoor Colony, Karachi, Sindh, Pakistan</span><small>Serving Karachi &amp; surrounding areas</small></div></div>
-        <div class="card-i reveal" style="--d:.25s"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><div><b>Hours</b><span>Open daily 7:00 AM – 11:30 PM</span></div></div>
-      </div>
-      <form class="form reveal" id="form" style="--d:.1s" novalidate>
-        <h3>Send an inquiry</h3>
-        <p>Your details open in WhatsApp with the message pre-filled — just press send.</p>
-        <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" placeholder="Full name" required></div>
-        <div class="field"><label for="f-phone">Phone / WhatsApp</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+92 300 1234567" required></div>
-        <div class="field"><label for="f-service">Service</label>
-          <select id="f-service" name="service" required>
-            <option value="">Select a service…</option>
-            <option>Furniture polish</option>
-            <option>Doors &amp; windows polish</option>
-            <option>Full building polish</option>
-            <option>Factory polish contract</option>
-            <option>Bedroom set (manufacturing)</option>
-            <option>Chairs &amp; tables (manufacturing)</option>
-            <option>Doors &amp; windows (manufacturing)</option>
-            <option>Deco / panels / ceilings / kitchen</option>
-            <option>Complete building woodwork</option>
-            <option>Other</option>
-          </select></div>
-        <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" placeholder="e.g. Polish 6 room doors and the main door in walnut matt PU; or a bedroom set in glossy finish." required></textarea></div>
-        <button class="btn btn-primary" type="submit">Send via WhatsApp →</button>
-        <p class="form-note" id="form-note"></p>
-      </form>
-    </div>
-  </section>
-</div>
-</main>
-
-<!-- ================= FOOTER ================= -->
-<footer>
-  <div class="wrap">
-    <div class="foot">
-      <div>
-        <a class="logo" href="#home" data-route="home"><span class="logo-mark">R</span><span class="logo-text"><b>ROYAL INTERIORS</b><small>Wood Polish · Deco</small></span></a>
-        <p>Polish work contractor for homes, factories and buildings in Karachi — and makers of doors, windows, bedroom sets, furniture and deco, finished by our own team.</p>
-      </div>
-      <div>
-        <h4>Pages</h4>
-        <ul>
-          <li><a href="#home" data-route="home">Home</a></li>
-          <li><a href="#portfolio" data-route="portfolio">Portfolio</a></li>
-          <li><a href="#about" data-route="about">About</a></li>
-          <li><a href="#contact" data-route="contact">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="tel:+923098986264">+92 309 8986264</a></li>
-          <li><a href="tel:+923004086113">+92 300 4086113</a></li>
-          <li><a href="mailto:furniturewood786@gmail.com">furniturewood786@gmail.com</a></li>
-          <li><a href="https://wa.me/923098986264" target="_blank" rel="noopener">WhatsApp us</a></li>
-          <li><a href="#contact" data-route="contact">Manzoor Colony, Karachi</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="copy"><span>© 2026 Royal Wood Interiors. All rights reserved.</span><span>amroyalinteriors.com</span></div>
-  </div>
-</footer>
-
+<section class="hero"><div class="hero-bg"><img src="assets/images/hero-doors-collage.jpg" alt="Royal Wood Polish," fetchpriority="high"></div><div class="wrap"><span class="eyebrow">Contractor · Factory Polish Work · Deco</span><h1>Royal Wood Polish, <em>Deco &amp; Interiors</em></h1><p class="lead">Complete polish work for homes, factories and buildings — and every kind of woodwork too. Doors, windows, bedroom sets, wardrobes, chairs, tables and deco: made, installed and finished by our own team.</p><div class="btns"><a class="btn btn-primary" href="#portfolio" data-route="portfolio">Explore Our Work →</a><a class="btn btn-ghost" href="#contact" data-route="contact">Request a Consultation</a></div><div class="pills"><span class="pill">PU · Melamine · Lacquer · Matt · Glossy</span><span class="pill">We make the woodwork — not only polish it</span><span class="pill">Factory contracts &amp; full building projects</span></div></div></section><div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"><span>PU Polish</span><span>Melamine</span><span>Lacquer</span><span>Matt Finish</span><span>Glossy Finish</span><span>Doors &amp; Windows</span><span>Bedroom Sets</span><span>Deco &amp; Panels</span><span>Building Projects</span></div></div><section id="services"><div class="wrap"><div class="sec-head reveal"><span class="eyebrow">What We Do</span><h2>Polish is our specialty — <em>and we build</em> all kinds of woodwork too</h2><p class="lead">We are polish contractors for homes, factories and buildings. Around that core we manufacture furniture, doors, windows and deco, and take on complete buildings as one contract.</p></div><div class="grid4"><a class="card reveal" href="#portfolio?cat=polish" data-route="portfolio" style="--d:0s"><div class="card-img"><img src="assets/images/door-polished-walnut.webp" alt="Polish Work" loading="lazy"></div><div class="card-body"><div class="card-num">01</div><h3>Polish Work</h3><p>Homes, factories &amp; buildings. PU, melamine, lacquer, matt or glossy — on new work and on pieces you already own.</p><span class="more">View work →</span></div></a><a class="card reveal" href="#portfolio?cat=furn" data-route="portfolio" style="--d:0.1s"><div class="card-img"><img src="assets/images/bedroom-set.webp" alt="Furniture &amp; Bedroom Sets" loading="lazy"></div><div class="card-body"><div class="card-num">02</div><h3>Furniture &amp; Bedroom Sets</h3><p>Beds, wardrobes, dressing tables, chairs and tables — made in our workshop and polished to one finish.</p><span class="more">View work →</span></div></a><a class="card reveal" href="#portfolio?cat=doors" data-route="portfolio" style="--d:0.2s"><div class="card-img"><img src="assets/images/doors-installed.webp" alt="Doors, Windows &amp; Deco" loading="lazy"></div><div class="card-body"><div class="card-num">03</div><h3>Doors, Windows &amp; Deco</h3><p>Doors and windows made, hung and polished; wall panels, ceilings, TV walls and kitchens.</p><span class="more">View work →</span></div></a><a class="card reveal" href="#portfolio?cat=proj" data-route="portfolio" style="--d:0.3s"><div class="card-img"><img src="assets/images/building-projects.webp" alt="Building &amp; Factory Projects" loading="lazy"></div><div class="card-body"><div class="card-num">04</div><h3>Building &amp; Factory Projects</h3><p>Full buildings, big project sets and factory polish contracts handled by one contractor.</p><span class="more">View work →</span></div></a></div></div></section><section class="bg-surface" id="before-after"><div class="wrap split"><div class="reveal"><span class="eyebrow">Before &amp; After</span><h2>Drag the handle — <em>see what polish changes</em></h2><p class="lead" style="margin-top:18px">A raw solid wood main door on the left, the same door after staining and PU polish on the right. Every finish we apply is prepared the same way: sanded in stages, sealed, stained to an approved sample and built up in thin coats.</p><div class="chips"><span class="chip">PU</span><span class="chip">Melamine</span><span class="chip">Lacquer</span><span class="chip">Matt</span><span class="chip">Glossy</span></div><a class="btn btn-ghost" href="#contact" data-route="contact">Get a Polish Quote</a></div><div class="reveal" style="--d:.15s"><div class="ba" id="ba" style="--pos:50%"><img src="assets/images/door-polished-walnut.webp" alt="After polish" loading="lazy"><img src="assets/images/door-raw-before-polish.webp" alt="Before polish" loading="lazy" class="before"><div class="ba-handle"></div><span class="ba-label l">Before</span><span class="ba-label r">After</span><input type="range" min="0" max="100" value="50" aria-label="Compare before and after"></div></div></div></section><section id="process"><div class="wrap"><div class="sec-head center reveal"><span class="eyebrow">Our Process</span><h2>From raw woodwork <em>to final finish</em></h2></div><div class="steps"><div class="step reveal" style="--d:0s"><div class="num">01</div><h3>Consultation &amp; Measurement</h3><p>You tell us the scope — polish only, specific pieces, a factory contract or a complete building. We visit, measure and advise.</p></div><div class="step reveal" style="--d:0.1s"><div class="num">02</div><h3>Design &amp; Finish Samples</h3><p>Designs, wood types and finish samples on your actual wood, with a clear itemised quotation.</p></div><div class="step reveal" style="--d:0.2s"><div class="num">03</div><h3>Manufacturing &amp; Installation</h3><p>Doors, windows, furniture and deco built in our workshop and installed on site by our team.</p></div><div class="step reveal" style="--d:0.3s"><div class="num">04</div><h3>Polish &amp; Handover</h3><p>Every surface stained and finished by hand and spray, inspected with you in daylight, then handed over.</p></div></div></div></section><section id="why" style="padding-top:0"><div class="wrap"><div class="sec-head center reveal"><span class="eyebrow">Why Royal Interiors</span><h2>Polish-first craftsmanship <em>from a team that builds</em></h2></div><div class="why reveal"><div><i></i><h3>Polish is our specialty</h3><p>Most workshops treat polish as the last step. For us it&#039;s the main event — done properly, in the finish you choose.</p></div><div><i></i><h3>Factory &amp; contract experience</h3><p>Door sets and furniture finished in volume — the same standard on the hundredth piece as on the first.</p></div><div><i></i><h3>We build what we finish</h3><p>Doors, windows, bedroom sets, chairs, tables and deco made by us, so the finish is planned from the first cut.</p></div><div><i></i><h3>One contractor, whole building</h3><p>Doors, windows, bedrooms, kitchen, deco and polish from one team — one consistent finish, one point of contact.</p></div><div><i></i><h3>Clear quotations</h3><p>Itemised quotes before work begins. Changes are discussed and agreed with you first.</p></div><div><i></i><h3>Inspected with you</h3><p>Nothing is finished until you&#039;ve seen it, opened every door and drawer, and are happy with the result.</p></div></div></div></section><section class="cta"><div class="wrap reveal"><span class="eyebrow">Start Your Project</span><h2>One door, a factory contract or an <em>entire building</em></h2><p>Send photos of the furniture or the site, or describe your plans. We&#039;ll reply with questions, options and a quotation.</p><div class="btns"><a class="btn btn-primary" href="#contact" data-route="contact">Request a Consultation</a><a class="btn btn-ghost" href="tel:+923098986264">Call +92 309 8986264</a></div></div></section></div>
+<div class="page" id="page-about"><div class="page-head"><div class="wrap"><span class="eyebrow">About</span><h1>Polish is our specialty. <em>Woodwork is our craft.</em></h1></div></div><section><div class="wrap split"><div class="reveal"><span class="eyebrow">Who We Are</span><h2>A polish contractor <em>that builds, too</em></h2><p class="lead" style="margin-top:18px">Royal Wood Interiors is a polish contractor for homes, factories and buildings in Karachi. Polish is our main event, not the last step: furniture, bedroom sets, doors, windows and whole buildings, finished in PU, melamine, lacquer, matt or glossy.</p><p style="margin-top:16px">We are not only polishers. We manufacture furniture, bedroom sets, doors, windows and deco in our own workshop, so you can order the piece, the room or the whole building from one contractor — and every surface carries the same finish.</p><div class="chips"><span class="chip">Furniture polish</span><span class="chip">Bedroom set polish</span><span class="chip">Doors &amp; windows</span><span class="chip">Full building polish</span><span class="chip">Factory contracts</span><span class="chip">Wood staining &amp; deco shades</span><span class="chip">Repolishing old furniture</span></div><a class="btn btn-primary" href="#contact" data-route="contact">Work With Us</a></div><div class="frame reveal" style="--d:.15s"><img src="assets/images/panel-doors-workshop.webp" alt="A polish contractor" loading="lazy"></div></div></section><section style="padding-top:0"><div class="wrap"><div class="sec-head reveal"><span class="eyebrow">How We Work</span><h2>Straight answers, <em>real work</em></h2></div><div class="boxes"><div class="box reveal" style="--d:0s"><i></i><h3>Real work, real photos</h3><p>Every photograph on this site is of our own jobs — doors, staircases, window frames and furniture we made or polished.</p></div><div class="box reveal" style="--d:0.1s"><i></i><h3>Clear quotations</h3><p>Itemised before work begins. If something changes, we discuss and agree it with you first.</p></div><div class="box reveal" style="--d:0.2s"><i></i><h3>Inspected with you</h3><p>Nothing is finished until you&#039;ve seen it in daylight and under room lighting and are happy.</p></div></div><div class="photos2"><img src="assets/images/wooden-main-gate.webp" alt="Our work" loading="lazy" class="reveal"><img src="assets/images/staircase-oak-finished.webp" alt="Our work" loading="lazy" class="reveal" style="--d:.15s"></div></div></section></div><div class="page" id="page-portfolio"><div class="page-head"><div class="wrap"><span class="eyebrow">Portfolio</span><h1>Real projects, <em>real craftsmanship</em></h1></div></div><section><div class="wrap"><div class="filters" id="filters" role="group" aria-label="Filter projects"><button class="active" data-f="all">All</button><button data-f="polish">Polish Work</button><button data-f="furn">Furniture &amp; Bedroom Sets</button><button data-f="doors">Doors, Windows &amp; Gates</button><button data-f="stairs">Staircases</button><button data-f="proj">Buildings &amp; Factories</button></div><div class="masonry" id="masonry"><figure class="item reveal" data-cat="polish"><img src="assets/images/door-polished-walnut.webp" alt="Walnut PU Main Door" loading="lazy"><figcaption><small>Polish Work</small><b>Walnut PU Main Door</b></figcaption></figure><figure class="item reveal" data-cat="proj"><img src="assets/images/building-projects.webp" alt="Wooden Windows — Full Building" loading="lazy"><figcaption><small>Buildings &amp; Factories</small><b>Wooden Windows — Full Building</b></figcaption></figure><figure class="item reveal" data-cat="furn"><img src="assets/images/bedroom-set.webp" alt="Carved Bedroom Set — Glossy" loading="lazy"><figcaption><small>Furniture &amp; Bedroom Sets</small><b>Carved Bedroom Set — Glossy</b></figcaption></figure><figure class="item reveal" data-cat="doors"><img src="assets/images/panel-doors-workshop.webp" alt="Solid Panel Door Manufacturing" loading="lazy"><figcaption><small>Doors, Windows &amp; Gates</small><b>Solid Panel Door Manufacturing</b></figcaption></figure><figure class="item reveal" data-cat="proj"><img src="assets/images/factory-polish-work.webp" alt="Door Set Polish Contract" loading="lazy"><figcaption><small>Buildings &amp; Factories</small><b>Door Set Polish Contract</b></figcaption></figure><figure class="item reveal" data-cat="stairs"><img src="assets/images/staircase-oak-finished.webp" alt="Solid Wood Staircase — Oak Finish" loading="lazy"><figcaption><small>Staircases</small><b>Solid Wood Staircase — Oak Finish</b></figcaption></figure><figure class="item reveal" data-cat="furn"><img src="assets/images/dressing-furniture.webp" alt="Dressing &amp; Chairs" loading="lazy"><figcaption><small>Furniture &amp; Bedroom Sets</small><b>Dressing &amp; Chairs</b></figcaption></figure><figure class="item reveal" data-cat="doors"><img src="assets/images/wooden-main-gate.webp" alt="Wooden Main Gate" loading="lazy"><figcaption><small>Doors, Windows &amp; Gates</small><b>Wooden Main Gate</b></figcaption></figure><figure class="item reveal" data-cat="proj"><img src="assets/images/bungalow-window-frames.webp" alt="Bungalow Window Frames" loading="lazy"><figcaption><small>Buildings &amp; Factories</small><b>Bungalow Window Frames</b></figcaption></figure><figure class="item reveal" data-cat="furn"><img src="assets/images/wardrobe.webp" alt="Built-in Wardrobe — Light Oak" loading="lazy"><figcaption><small>Furniture &amp; Bedroom Sets</small><b>Built-in Wardrobe — Light Oak</b></figcaption></figure><figure class="item reveal" data-cat="doors"><img src="assets/images/doors-installed.webp" alt="Doors Made, Hung &amp; Polished" loading="lazy"><figcaption><small>Doors, Windows &amp; Gates</small><b>Doors Made, Hung &amp; Polished</b></figcaption></figure><figure class="item reveal" data-cat="stairs"><img src="assets/images/staircase-installation.jpg" alt="Treads Being Fitted" loading="lazy"><figcaption><small>Staircases</small><b>Treads Being Fitted</b></figcaption></figure></div></div></section></div><div class="page" id="page-offers"><div class="page-head"><div class="wrap"><span class="eyebrow">Offers</span><h1>Current offers <em>&amp; seasonal deals</em></h1></div></div><section><div class="wrap"><div class="offers-empty">No offers are running right now. Contact us for a quotation.</div></div></section></div><div class="page" id="page-contact"><div class="page-head"><div class="wrap"><span class="eyebrow">Contact</span><h1>Tell us what you need — <em>we&#039;ll quote it</em></h1></div></div><section><div class="wrap contact"><div class="info"><a class="card-i reveal" href="tel:+923098986264"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><b>Phone</b><span>+92 309 8986264</span><small>Tap to call</small></div></a><a class="card-i reveal" style="--d:.05s" href="tel:+923004086113"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><b>Phone 2</b><span>+92 300 4086113</span><small>Tap to call</small></div></a><a class="card-i reveal" style="--d:.1s" href="https://wa.me/923098986264?text=Assalam-o-Alaikum%2C%20I%20am%20interested%20in%20your%20polish%20work%20%2F%20woodwork%20services.%20Please%20share%20details%20and%20a%20quotation." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M20.5 3.5A11.8 11.8 0 0 0 2.3 17.7L1 23l5.4-1.4A11.8 11.8 0 0 0 20.5 3.5z"/><path d="M8.5 7.5c.3-.6.6-.6.9-.6h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.4.4c-.2.2-.3.3-.1.6a9 9 0 0 0 1.7 2.1 8 8 0 0 0 2.4 1.5c.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.4.2.5.3 0 .2 0 .9-.3 1.6-.3.8-1.6 1.5-2.2 1.5-.6.1-1.2.3-4-1-3.3-1.5-5.5-5-5.6-5.2-.2-.3-1.3-1.8-1.3-3.4 0-1.6.8-2.4 1.1-2.7z"/></svg><div><b>WhatsApp</b><span>Chat with us</span><small>Send photos for a quick estimate</small></div></a><a class="card-i reveal" style="--d:.15s" href="mailto:furniturewood786@gmail.com"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg><div><b>Email</b><span>furniturewood786@gmail.com</span></div></a><div class="card-i reveal" style="--d:.2s"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><b>Address</b><span>House No. 452/A, Street No. 54, Sector C, Sir Syed Ahmad Khan Road, near Maryam Masjid, Manzoor Colony, Karachi, Sindh, Pakistan</span><small>Serving Karachi &amp; surrounding areas</small></div></div><div class="card-i reveal" style="--d:.25s"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><div><b>Hours</b><span>Open daily 7:00 AM – 11:30 PM</span></div></div></div><form class="form reveal" id="form" style="--d:.1s" novalidate><h3>Send an inquiry</h3><p>Your details open in WhatsApp with the message pre-filled — just press send.</p><div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" placeholder="Full name" required></div><div class="field"><label for="f-phone">Phone / WhatsApp</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+92 300 1234567" required></div><div class="field"><label for="f-service">Service</label><select id="f-service" name="service" required><option value="">Select a service…</option><option>Furniture polish</option><option>Doors &amp; windows polish</option><option>Full building polish</option><option>Factory polish contract</option><option>Bedroom set (manufacturing)</option><option>Chairs &amp; tables (manufacturing)</option><option>Doors &amp; windows (manufacturing)</option><option>Deco / panels / ceilings / kitchen</option><option>Complete building woodwork</option><option>Other</option></select></div><div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" placeholder="Describe the work, sizes and finish you want." required></textarea></div><button class="btn btn-primary" type="submit">Send via WhatsApp →</button><p class="form-note" id="form-note"></p></form></div></section></div></main>
+<footer><div class="wrap"><div class="foot">
+<div><a class="logo" href="#home" data-route="home" aria-label="Home"><span class="logo-mark">R</span><span class="logo-text"><b>ROYAL INTERIORS</b><small>Wood Polish · Deco</small></span></a><p>Polish work contractor for homes, factories and buildings in Karachi — and makers of doors, windows, bedroom sets, furniture and deco, finished by our own team.</p></div>
+<div><h4>Pages</h4><ul>
+<li><a href="#home" data-route="home">Home</a></li><li><a href="#portfolio" data-route="portfolio">Portfolio</a></li><li><a href="#about" data-route="about">About</a></li>
+<li><a href="#contact" data-route="contact">Contact</a></li></ul></div>
+<div><h4>Follow</h4><ul>
+<li><a href="https://wa.me/923098986264?text=Assalam-o-Alaikum%2C%20I%20am%20interested%20in%20your%20polish%20work%20%2F%20woodwork%20services.%20Please%20share%20details%20and%20a%20quotation." target="_blank" rel="noopener">WhatsApp</a></li></ul></div>
+<div><h4>Contact</h4><ul>
+<li><a href="tel:+923098986264">+92 309 8986264</a></li><li><a href="tel:+923004086113">+92 300 4086113</a></li><li><a href="mailto:furniturewood786@gmail.com">furniturewood786@gmail.com</a></li><li><a href="https://wa.me/923098986264?text=Assalam-o-Alaikum%2C%20I%20am%20interested%20in%20your%20polish%20work%20%2F%20woodwork%20services.%20Please%20share%20details%20and%20a%20quotation." target="_blank" rel="noopener">WhatsApp us</a></li><li><a href="#contact" data-route="contact">Serving Karachi &amp; surrounding areas</a></li></ul></div>
+</div><div class="copy"><span>© 2026 Royal Wood Interiors. All rights reserved.</span><span>amroyalinteriors.com</span></div></div></footer>
 <a class="wa" href="https://wa.me/923098986264?text=Assalam-o-Alaikum%2C%20I%20am%20interested%20in%20your%20polish%20work%20%2F%20woodwork%20services.%20Please%20share%20details%20and%20a%20quotation." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3M12 21.8a9.9 9.9 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.9 9.9 0 1 1 12 21.8m8.4-18.3A11.8 11.8 0 0 0 .2 17.8L0 24l6.3-1.7A11.9 11.9 0 0 0 24 11.9c0-3.2-1.2-6.2-3.5-8.4z"/></svg></a>
-
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer"><img src="" alt=""><p id="lb-cap"></p></div>
-
 <script>
 (function(){
   "use strict";
   var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
   var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var WA="923098986264";
+  var SITE="AM Royal Interiors | Wood Polish, Deco & Woodwork Contractor \u2014 Karachi";
 
-  /* ---------- intro ---------- */
-  var intro=$("#intro"), word=$("#intro-word");
-  word.innerHTML=word.textContent.split("").map(function(ch,i){return '<span style="animation-delay:'+(0.4+i*0.15)+'s,'+(1.6+i*0.15)+'s">'+ch+'</span>'}).join("");
-  var revealObs=null;
+  var intro=$("#intro"), revealObs=null;
   function startSite(){
     document.body.classList.remove("locked");
     revealObs=new IntersectionObserver(function(entries){
@@ -605,13 +53,16 @@ footer{border-top:1px solid var(--border);padding:70px 0 34px;background:#070605
     },{threshold:.12,rootMargin:"0px 0px -6% 0px"});
     $$(".reveal").forEach(function(el){revealObs.observe(el)});
   }
-  if(reduce){ intro.remove(); startSite(); }
-  else{
-    setTimeout(function(){ intro.classList.add("out"); },3700);
-    setTimeout(function(){ intro.remove(); startSite(); },5300);
-  }
+  if(intro){
+    var word=$("#intro-word");
+    word.innerHTML=word.textContent.split("").map(function(ch,i){return '<span style="animation-delay:'+(0.4+i*0.15)+'s,'+(1.6+i*0.15)+'s">'+(ch===" "?"&nbsp;":ch)+'</span>'}).join("");
+    if(reduce){ intro.remove(); startSite(); }
+    else{
+      setTimeout(function(){ intro.classList.add("out"); },3700);
+      setTimeout(function(){ intro.remove(); startSite(); },5300);
+    }
+  } else { startSite(); }
 
-  /* ---------- header ---------- */
   var header=$("#header");
   function onScroll(){ header.classList.toggle("scrolled",window.scrollY>40); }
   window.addEventListener("scroll",onScroll,{passive:true}); onScroll();
@@ -619,8 +70,7 @@ footer{border-top:1px solid var(--border);padding:70px 0 34px;background:#070605
   function setMenu(open){ burger.classList.toggle("open",open); menu.classList.toggle("open",open); burger.setAttribute("aria-expanded",open); if(!document.getElementById("intro")) document.body.classList.toggle("locked",open); }
   burger.addEventListener("click",function(){ setMenu(!menu.classList.contains("open")); });
 
-  /* ---------- router ---------- */
-  var routes=["home","about","portfolio","contact"];
+  var routes=$$(".page").map(function(p){return p.id.replace(/^page-/,"")});
   function parse(){
     var h=(location.hash||"#home").slice(1), q={}, parts=h.split("?"); var r=parts[0]||"home";
     if(parts[1]) parts[1].split("&").forEach(function(kv){var p=kv.split("="); q[decodeURIComponent(p[0])]=decodeURIComponent(p[1]||"")});
@@ -632,58 +82,55 @@ footer{border-top:1px solid var(--border);padding:70px 0 34px;background:#070605
     $$(".page").forEach(function(pg){ pg.classList.toggle("active",pg.id==="page-"+p.route); });
     $$("[data-route]").forEach(function(a){ a.classList.toggle("active",a.dataset.route===p.route && a.closest(".nav,.menu")!==null); });
     setMenu(false);
-    window.scrollTo({top:0,behavior:"instant" in window ? "instant" : "auto"});
+    window.scrollTo({top:0,behavior:"instant"});
     if(p.route==="portfolio") setFilter(p.q.cat||"all");
     if(revealObs){ $$(".page.active .reveal:not(.in)").forEach(function(el){ revealObs.observe(el); }); }
-    document.title=(p.route==="home"?"":p.route.charAt(0).toUpperCase()+p.route.slice(1)+" — ")+"AM Royal Interiors | Wood Polish, Deco & Woodwork — Karachi";
+    var label=p.route==="home"?"":(($(".nav a.active")||{}).textContent||p.route)+" — ";
+    document.title=label+SITE;
   }
   window.addEventListener("hashchange",go);
   $$("[data-route]").forEach(function(a){ a.addEventListener("click",function(){ if(location.hash===a.getAttribute("href")) go(); }); });
-  go();
 
-  /* ---------- marquee ---------- */
-  var mq=$("#marquee"); mq.innerHTML+=mq.innerHTML;
+  var mq=$("#marquee"); if(mq){ mq.innerHTML+=mq.innerHTML; }
 
-  /* ---------- before / after ---------- */
-  var ba=$("#ba"), range=$("input",ba);
-  function setPos(v){ ba.style.setProperty("--pos",v+"%"); }
-  range.addEventListener("input",function(){ setPos(range.value); });
-  ba.addEventListener("pointermove",function(e){ if(e.buttons||e.pointerType==="touch"){ var r=ba.getBoundingClientRect(); var v=Math.max(0,Math.min(100,(e.clientX-r.left)/r.width*100)); range.value=v; setPos(v);} });
+  var ba=$("#ba");
+  if(ba){
+    var range=$("input",ba);
+    function setPos(v){ ba.style.setProperty("--pos",v+"%"); }
+    range.addEventListener("input",function(){ setPos(range.value); });
+    ba.addEventListener("pointermove",function(e){ if(e.buttons||e.pointerType==="touch"){ var r=ba.getBoundingClientRect(); var v=Math.max(0,Math.min(100,(e.clientX-r.left)/r.width*100)); range.value=v; setPos(v);} });
+  }
 
-  /* ---------- portfolio ---------- */
   var filters=$("#filters"), items=$$("#masonry .item");
   function setFilter(f){
+    if(!filters) return;
     if(!$$("button",filters).some(function(b){return b.dataset.f===f})) f="all";
     $$("button",filters).forEach(function(b){ b.classList.toggle("active",b.dataset.f===f); });
     items.forEach(function(it){ var show=f==="all"||it.dataset.cat===f; it.classList.toggle("hide",!show); if(show&&revealObs){ it.classList.add("in"); } });
   }
-  filters.addEventListener("click",function(e){ var b=e.target.closest("button"); if(!b) return; setFilter(b.dataset.f); history.replaceState(null,"","#portfolio"+(b.dataset.f==="all"?"":"?cat="+b.dataset.f)); });
+  if(filters){ filters.addEventListener("click",function(e){ var b=e.target.closest("button"); if(!b) return; setFilter(b.dataset.f); history.replaceState(null,"","#portfolio"+(b.dataset.f==="all"?"":"?cat="+b.dataset.f)); }); }
   var lb=$("#lightbox"), lbImg=$("img",lb), lbCap=$("#lb-cap");
-  items.forEach(function(it){ it.addEventListener("click",function(){ lbImg.src=$("img",it).src; lbImg.alt=$("img",it).alt; lbCap.textContent=$("b",it).textContent; lb.classList.add("open"); document.body.classList.add("locked"); }); });
-  function closeLb(){ lb.classList.remove("open"); document.body.classList.remove("locked"); }
+  function openLb(src,alt,cap){ lbImg.src=src; lbImg.alt=alt; lbCap.textContent=cap||""; lb.classList.add("open"); document.body.classList.add("locked"); }
+  items.forEach(function(it){ it.addEventListener("click",function(){ var im=$("img",it); openLb(im.src,im.alt,$("b",it).textContent); }); });
+  $$("img[data-lb]").forEach(function(im){ im.addEventListener("click",function(){ openLb(im.src,im.alt,""); }); });
+  function closeLb(){ lb.classList.remove("open"); if(!document.getElementById("intro")) document.body.classList.remove("locked"); }
   lb.addEventListener("click",closeLb);
   document.addEventListener("keydown",function(e){ if(e.key==="Escape"){ closeLb(); setMenu(false);} });
 
-  /* ---------- contact form -> WhatsApp ---------- */
   var form=$("#form"), note=$("#form-note");
-  form.addEventListener("submit",function(e){
-    e.preventDefault();
-    var name=$("#f-name").value.trim(), phone=$("#f-phone").value.trim(), service=$("#f-service").value, msg=$("#f-msg").value.trim();
-    if(!name||!phone||!service||!msg){ note.textContent="Please fill in your name, phone, service and message."; note.style.color="#e0a070"; return; }
-    var text="Assalam-o-Alaikum, I would like a quotation.\nName: "+name+"\nPhone: "+phone+"\nService: "+service+"\nDetails: "+msg;
-    window.open("https://wa.me/923098986264?text="+encodeURIComponent(text),"_blank","noopener");
-    note.textContent="WhatsApp opened with your message — press send there."; note.style.color="#c9bfad";
-  });
-
-  /* ---------- structured data ---------- */
-  try{
-    var ld={"@context":"https://schema.org","@type":"HomeAndConstructionBusiness",name:"Royal Wood Interiors",url:"https://amroyalinteriors.com/",telephone:["+923098986264","+923004086113"],email:"furniturewood786@gmail.com",
-      address:{"@type":"PostalAddress",streetAddress:"House No. 452/A, Street No. 54, Sector C, Sir Syed Ahmad Khan Road, near Maryam Masjid, Manzoor Colony",addressLocality:"Karachi",addressRegion:"Sindh",addressCountry:"PK"},
-      areaServed:"Karachi & surrounding areas",openingHours:"Mo-Su 07:00-23:30",priceRange:"$$",
-      description:"Polish work contractor for homes, factories and buildings; doors, windows, bedroom sets, furniture and deco made and finished by our own team."};
-    var s=document.createElement("script"); s.type="application/ld+json"; s.textContent=JSON.stringify(ld); document.head.appendChild(s);
-  }catch(err){}
+  if(form){
+    form.addEventListener("submit",function(e){
+      e.preventDefault();
+      var name=$("#f-name").value.trim(), phone=$("#f-phone").value.trim(), service=$("#f-service").value, msg=$("#f-msg").value.trim();
+      if(!name||!phone||!service||!msg){ note.textContent="Please fill in your name, phone, service and message."; note.style.color="#e0a070"; return; }
+      var text="Assalam-o-Alaikum, I would like a quotation.\nName: "+name+"\nPhone: "+phone+"\nService: "+service+"\nDetails: "+msg;
+      window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(text),"_blank","noopener");
+      note.textContent="WhatsApp opened with your message — press send there."; note.style.color="";
+    });
+  }
+  go();
 })();
 </script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"ROYAL INTERIORS","url":"https://amroyalinteriors.com/","telephone":["+923098986264","+923004086113"],"email":"furniturewood786@gmail.com","address":{"@type":"PostalAddress","streetAddress":"House No. 452/A, Street No. 54, Sector C, Sir Syed Ahmad Khan Road, near Maryam Masjid, Manzoor Colony, Karachi, Sindh, Pakistan","addressLocality":"Karachi","addressRegion":"Sindh","addressCountry":"PK"},"areaServed":"Serving Karachi & surrounding areas","openingHours":"Mo-Su 07:00-23:30","description":"Royal Wood Interiors — polish work contractor for homes, factories and buildings in Karachi. PU, melamine, lacquer, matt and glossy finishes, plus doors, windows, bedroom sets, wardrobes, chairs, tables and deco made by our own team."}</script>
 </body>
 </html>
